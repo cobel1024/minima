@@ -127,8 +127,7 @@ class CertificateFactory(DjangoModelFactory[Certificate]):
         CertificateSkillFactory.create_batch(generic.random.randint(1, 3), certificate=self)
         CertificateEndorsementFactory.create_batch(generic.random.randint(1, 2), certificate=self)
 
-        user = extracted["user"]
-        user = UserFactory() if not user else user
+        user = extracted["user"] if extracted and extracted["user"] else UserFactory()
         if not CertificateAward.objects.filter(certificate_id=self.pk, recipient=user, context="").exists():
             async_to_sync(CertificateAward.issue)(
                 certificate_id=self.pk,
