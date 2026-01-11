@@ -28,6 +28,9 @@ class MediaDocument(Document):
     class Django:
         model = Media
 
+    def prepare_media_id(self, instance: Media):
+        return instance.pk
+
     def prepare_suggest(self, instance: Media):
         all_inputs = set()
         all_inputs.add(instance.title)
