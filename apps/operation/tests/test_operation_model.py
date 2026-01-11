@@ -32,9 +32,21 @@ def test_announcement():
     AnnouncementFactory.create()
 
 
+@pytest.mark.load_data
+def test_load_announcement_data(db_no_rollback: DjangoDbBlocker):
+    with FactoryField.override_locale(settings.DEFAULT_LANGUAGE):
+        AnnouncementFactory.create_batch(30)
+
+
 @pytest.mark.django_db
 def test_instructor():
     InstructorFactory.create()
+
+
+@pytest.mark.load_data
+def test_load_instructor_data(db_no_rollback: DjangoDbBlocker):
+    with FactoryField.override_locale(settings.DEFAULT_LANGUAGE):
+        InstructorFactory.create_batch(3)
 
 
 @pytest.mark.django_db
@@ -42,9 +54,21 @@ def test_honor_code():
     HonorCodeFactory.create()
 
 
+@pytest.mark.load_data
+def test_load_honor_code_data(db_no_rollback: DjangoDbBlocker):
+    with FactoryField.override_locale(settings.DEFAULT_LANGUAGE):
+        HonorCodeFactory.create_batch(3)
+
+
 @pytest.mark.django_db
 def test_faq():
     FAQFactory.create()
+
+
+@pytest.mark.load_data
+def test_load_faq_data(db_no_rollback: DjangoDbBlocker):
+    with FactoryField.override_locale(settings.DEFAULT_LANGUAGE):
+        FAQFactory.create_batch(3)
 
 
 @pytest.mark.django_db
