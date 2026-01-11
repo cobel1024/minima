@@ -1,0 +1,24 @@
+<mj-wrapper>
+  <mj-section>
+    <mj-column>
+      <mj-divider border-color="#e5e7eb" border-width="1px" padding="20px 0" />
+      <mj-text font-size="14px" color="#6b7280" align="center">
+        {% blocktranslate with support_email=support_email %}Need help? Contact our support team at <a href="mailto:{{ support_email }}" class="footer-link">{{ support_email }}</a>{% endblocktranslate %}
+      </mj-text>
+    </mj-column>
+  </mj-section>
+  <mj-section background-color="#f3f4f6" padding-bottom="20px">
+    <mj-column>
+      <mj-text font-size="12px" color="#6b7280" align="center" line-height="1.2">
+        {% blocktranslate with year=now|date:"Y" platform_name=platform_name %}&copy; {{ year }} {{ platform_name }}. All rights reserved.{% endblocktranslate %}
+      </mj-text>
+      <mj-text font-size="12px" color="#6b7280" align="center" line-height="1.2">
+        {{ platform_address }}
+      </mj-text>
+      <mj-text font-size="12px" color="#6b7280" align="center" line-height="1.2">
+        <a href="{{ privacy_policy_url }}" class="footer-link">{% translate "Privacy Policy" %}</a> | 
+        <a href="{{ terms_url }}" class="footer-link">{% translate "Terms of Service" %}</a>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>

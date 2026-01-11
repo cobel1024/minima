@@ -1,0 +1,89 @@
+name: CI Pipeline
+
+on:
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - "**.md"
+      - "docs/**"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build minima with cache
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          target: dev
+          tags: minima:dev
+          cache-from: type=gha,scope=${{ github.workflow }}-minima
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-minima
+          load: true
+
+      - name: Build search with cache
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile.search
+          tags: minima-search:dev
+          cache-from: type=gha,scope=${{ github.workflow }}-search
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-search
+          load: true
+
+      - name: Create docker network
+        run: docker network create minima || true
+
+      - name: Create test environment file
+        run: |
+          cat > .env << EOF
+          # envs
+          EOF
+
+      - name: Start services
+        run: docker compose up -d
+
+      - name: Bootstrap django
+        run: |
+          commands="python manage.py migrate && \
+                   python manage.py collectstatic --noinput && \
+                   python manage.py createsuperuser --noinput || true && \
+                   python manage.py create_assistant_bot && \
+                   python manage.py opensearch index create --force --ignore-error && \
+                   python manage.py create_platform_partner && \
+                   python manage.py create_empty_policies && \
+                   python manage.py load_ncs_data"
+          docker compose exec -T minima sh -c "$commands"
+          docker compose restart minima worker
+
+      - name: Install uv and dev tools
+        run: |
+          pip install uv
+          uv tool install ty
+          uv tool install ruff
+
+      - name: Run linting
+        run: |
+          uv run ty check
+          uv run ruff check .
+          uv run ruff check --select I .
+          uv run ruff format --check .
+
+      - name: Run tests
+        if: "!contains(github.event.head_commit.message, '[skip ci]')"
+        run: |
+          docker compose exec -T minima pytest -v --cov
+          docker compose exec -T minima pytest -v -m load_data --cov
+          docker compose exec -T minima pytest -v -m e2e --cov
+
+      - name: Cleanup
+        if: always()
+        run: |
+          docker compose down -v
+          docker network rm minima || true

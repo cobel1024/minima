@@ -1,0 +1,150 @@
+x-minima: &config
+  image: minima:dev
+  environment:
+    - DJANGO_SUPERUSER_NAME=Super Admin
+    - DJANGO_SUPERUSER_EMAIL=admin@example.com
+    - DJANGO_SUPERUSER_PASSWORD=1111
+  env_file:
+    - .env
+  depends_on:
+    - db
+    - redis
+  volumes:
+    - ./apps:/app/apps
+    - ./locale:/app/locale
+    - ./minima:/app/minima
+    - ./static:/app/static
+    - ./conftest.py:/app/conftest.py
+    - ./manage.py:/app/manage.py
+    - ./pyproject.toml:/app/pyproject.toml
+  user: "app:app"
+  networks:
+    - minima
+  extra_hosts:
+    - "localhost:host-gateway"
+
+services:
+  minima:
+    <<: *config
+    container_name: minima
+    ports:
+      - "8000:8000"
+    command:
+      - /bin/sh
+      - -c
+      - |
+        until python -c "import socket; socket.socket().connect(('db', 5432))" 2>/dev/null; do sleep 1; done
+        uvicorn minima.asgi:application --reload --port 8000 --host 0.0.0.0
+
+  worker:
+    <<: *config
+    container_name: worker
+    command:
+      - /bin/sh
+      - -c
+      - |
+        until python -c "import socket; socket.socket().connect(('db', 5432))" 2>/dev/null; do sleep 1; done
+        celery -A minima worker -B -l info
+
+  db:
+    image: postgres:alpine
+    container_name: db
+    environment:
+      - POSTGRES_DB=minima
+      - POSTGRES_USER=minima
+      - POSTGRES_PASSWORD=minima
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      sh -c "
+        docker-entrypoint.sh postgres
+      "
+    networks:
+      - minima
+
+  opensearch:
+    image: minima-search:dev
+    container_name: opensearch
+    environment:
+      - cluster.name=minima-cluster
+      - node.name=minima-node
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+      - DISABLE_SECURITY_PLUGIN=true
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - minima
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    networks:
+      - minima
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: mailpit
+    ports:
+      - "8025:8025"
+    networks:
+      - minima
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    environment:
+      - MINIO_ROOT_USER=minima
+      - MINIO_ROOT_PASSWORD=minima.dev
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    networks:
+      - minima
+
+  minio-init:
+    image: minio/mc:latest
+    container_name: minio-init
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set minio http://minio:9000 minima minima.dev;
+      mc mb -p minio/minima;
+      mc anonymous set-json /tmp/policy.json minio/minima;
+      "
+    volumes:
+      - ./storage-policy.json:/tmp/policy.json
+    networks:
+      - minima
+
+  tika:
+    image: apache/tika:latest
+    container_name: tika
+    ports:
+      - "9998:9998"
+    networks:
+      - minima
+
+volumes:
+  postgres_data:
+  minio_data:
+  opensearch_data:
+
+networks:
+  minima:
+    external: true

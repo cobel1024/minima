@@ -1,0 +1,63 @@
+.simplebar-content ol[x-show="navigationOpen"] {
+  margin-left: 2em;
+  border-left-style: var(--tw-border-style);
+  border-left-width: 2px;
+  border-left-color: #ddd;
+}
+
+.simplebar-content-wrapper {
+  padding-bottom: 3em;
+}
+
+/* fix non clickable icon button */
+.related-widget-wrapper-link>.material-symbols-outlined {
+  pointer-events: none;
+}
+
+.tabular-table .prettify-json {
+  max-height: 100px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.tabular-table .readonly {
+  border: none;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.result-list tbody td {
+  height: 52px;
+}
+
+form .readonly {
+  border: none;
+  box-shadow: none;
+}
+
+.rjf-form-wrapper .rjf-form-group {
+  max-width: var(--container-2xl);
+}
+
+.rjf-form-wrapper .rjf-form-group-inner {
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  border-radius: var(--border-radius, 6px);
+  border-style: var(--tw-border-style);
+  border-color: var(--color-base-200);
+  border-width: 1px;
+}
+
+.rjf-form-wrapper textarea,
+.rjf-form-wrapper select,
+.rjf-form-wrapper input[type="text"],
+.rjf-form-wrapper input[type="number"] {
+  background-color: var(--color-base-50);
+  padding: 0.5rem;
+}
+
+.rjf-form-wrapper .rjf-error-text {
+  color: var(--color-red-600);
+  font-size: 12px;
+}

@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": ["s3:GetObject"],
+      "Resource": ["arn:aws:s3:::minima/static/*"]
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObjectAcl",
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:DeleteObject",
+        "s3:PutObjectAcl",
+        "s3:DeleteObjectVersion"
+      ],
+      "Resource": ["arn:aws:s3:::minima", "arn:aws:s3:::minima/static/*"],
+      "Condition": {
+        "StringEquals": {
+          "s3:signatureversion": "AWS4-HMAC-SHA256"
+        }
+      }
+    }
+  ]
+}

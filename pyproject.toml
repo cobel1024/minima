@@ -1,0 +1,108 @@
+[project]
+name = "minima"
+version = "0.1.0"
+description = "Minima LMS"
+authors = [{ name = "Cobel", email = "cobel1024@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.14,<3.15.0"
+dependencies = [
+  "django",
+  "django-storages[s3]",
+  "django-pgtrigger",
+  "django-taggit",
+  "django-treebeard",
+  "django-redis",
+  "django-phonenumber-field[phonenumberslite]",
+  "django-unfold",
+  "django-opensearch-dsl",
+  "psycopg[binary]",
+  "openpyxl",
+  "mjml-python",
+  "passlib[bcrypt]",
+  "tika",
+  "pillow",
+  "django-import-export",
+  "celery",
+  "django-celery-results",
+  "uvicorn",
+  "pyjwt",
+  "pyotp",
+  "qrcode",
+  "django-cleanup",
+  "django-pghistory",
+  "django-ipware",
+  "ua-parser[regex]",
+  "django-otp",
+  "django-ninja",
+  "msgspec",
+  "pydantic[email]",
+  "isodate",
+  "django-jsonform",
+  "yt-dlp",
+  "youtube-transcript-api",
+  "beautifulsoup4",
+  "google-genai",
+  "django-upgrade",
+  "django-stubs-ext",
+  "fpdf2",
+  "pypdfium2",
+]
+
+[dependency-groups]
+dev = [
+  "typer",
+  "pytest-django",
+  "pytest-xdist",
+  "pytest-cov",
+  "pytest",
+  "factory-boy",
+  "mimesis",
+  "pytest-order",
+  "pytest-mock",
+  "httpx",
+  "boto3-stubs[s3]",
+  "django-stubs>=5.2.8",
+]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["**/migrations/**", "typings"]
+
+[tool.ruff.format]
+preview = true
+skip-magic-trailing-comma = true
+
+[tool.djlint]
+profile="django"
+
+[tool.ty.src]
+exclude = ["**/migrations/**", "**/factories.py"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "minima.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+markers = [
+  "load_data: Load bulk data for human testing",
+  "e2e: End-to-end tests",
+]
+addopts = "--tb=short --strict-markers -m 'not load_data and not e2e'"
+
+[tool.coverage.run]
+data_file = "/tmp/.coverage"
+
+[tool.coverage.html]
+directory = "/tmp/htmlcov"
+
+[tool.pyrefly]
+project-includes = ["**/*"]
+project-excludes = [
+  "**/node_modules",
+  "**/__pycache__",
+  "**/.venv/**/*",
+  "**/migrations/**/*",
+  # "**/factories.py",
+]
+
+[tool.pyrefly.errors]
+inconsistent-inheritance = false
+bad-override = false

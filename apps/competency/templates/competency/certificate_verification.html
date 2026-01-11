@@ -1,0 +1,241 @@
+{% spaceless %}
+    {% load i18n static %}
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="keywords" content="{% trans "Certificate Verification" %}">
+            <meta name="description" content="{% trans "Certificate Verification" %}">
+            <title>{% trans "Official Certificate Verification" %}</title>
+            <style>
+                :root {
+                    --bg: #f3f4f6;
+                    --paper: #ffffff;
+                    --primary: #1e3a8a;
+                    --success: #15803d;
+                    --danger: #b91c1c;
+                    --warning: #b45309;
+                    --border: #d1d5db;
+                    --text: #111827;
+                    --muted: #6b7280;
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    margin: 0;
+                    background: var(--bg);
+                    font-family: -apple-system, BlinkMacSystemFont,
+                                 "Noto Sans KR", "Segoe UI", Roboto, Arial, sans-serif;
+                    color: var(--text);
+                    line-height: 1.65;
+                }
+
+                .container {
+                    max-width: 720px;
+                    margin: 50px auto;
+                    padding: 0 20px;
+                }
+
+                /* ===== Header (Soft Official) ===== */
+                .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 16px 22px;
+                    background: #ffffff;
+                    border: 1px solid var(--border);
+                    border-bottom: none;
+                    border-radius: 10px 10px 0 0;
+                }
+
+                .header-left {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                }
+
+                .logo {
+                    height: 36px;
+                    width: auto;
+                }
+
+                .header-text .title {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: var(--text);
+                }
+
+                .header-text .subtitle {
+                    font-size: 12px;
+                    color: var(--muted);
+                    margin-top: 2px;
+                }
+
+                .header-badge {
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: .05em;
+                    color: var(--primary);
+                    border: 1px solid var(--primary);
+                    padding: 4px 10px;
+                    border-radius: 999px;
+                }
+
+                /* ===== Paper ===== */
+                .paper {
+                    background: var(--paper);
+                    border: 1px solid var(--border);
+                    border-top: none;
+                    padding: 30px;
+                    border-radius: 0 0 10px 10px;
+                }
+
+                .notice {
+                    background: #f9fafb;
+                    border: 1px solid var(--border);
+                    padding: 14px 18px;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    margin-bottom: 26px;
+                }
+
+                /* ===== Status ===== */
+                .status {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin-bottom: 18px;
+                }
+
+                .status.valid { color: var(--success); }
+                .status.invalid { color: var(--danger); }
+
+                .status.expired {
+                    font-size: 16px;
+                    color: var(--warning);
+                    margin-top: -8px;
+                }
+
+                /* ===== Info Table ===== */
+                .info {
+                    margin-top: 20px;
+                    border-top: 2px solid var(--border);
+                }
+
+                .row {
+                    display: grid;
+                    grid-template-columns: 180px 1fr;
+                    padding: 14px 0;
+                    border-bottom: 1px solid var(--border);
+                }
+
+                .label {
+                    font-size: 13px;
+                    color: var(--muted);
+                    font-weight: 600;
+                }
+
+                .value {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                /* ===== Footer ===== */
+                .footer {
+                    margin-top: 28px;
+                    padding-top: 16px;
+                    border-top: 1px dashed var(--border);
+                    font-size: 12px;
+                    color: var(--muted);
+                }
+
+                .seal {
+                    margin-top: 14px;
+                    font-weight: 700;
+                    color: var(--primary);
+                }
+
+                @media (max-width: 600px) {
+                    .row {
+                        grid-template-columns: 1fr;
+                        gap: 4px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <!-- Header -->
+                <div class="header">
+                    <div class="header-left">
+                        <img src="{% static 'image/logo/logo.png' %}"
+                             alt="Official Logo"
+                             class="logo" />
+                        <div class="header-text">
+                            <div class="title">{% trans "Certificate Verification" %}</div>
+                            <div class="subtitle">{% trans "Official Verification Service" %}</div>
+                        </div>
+                    </div>
+                    <div class="header-badge">OFFICIAL</div>
+                </div>
+                <!-- Paper -->
+                <div class="paper">
+                    <div class="notice">
+                        {% trans "This page is an official verification page accessed via QR code or secure link." %}
+                        <br />
+                        {% trans "The information below confirms the issuance status of the certificate." %}
+                    </div>
+                    {% if error %}
+                        <div class="status invalid">✕ {% trans "Invalid request" %}</div>
+                    {% elif award %}
+                        <div class="status valid">✓ {% trans "Authentic Certificate Verified" %}</div>
+                        {% if award.expires %}
+                            {% now "Y-m-d" as today %}
+                            {% if award.expires|date:"Y-m-d" < today %}
+                                <div class="status expired">⚠ {% trans "This certificate is no longer valid (expired)" %}</div>
+                            {% endif %}
+                        {% endif %}
+                        <div class="info">
+                            <div class="row">
+                                <div class="label">{% trans "Document Number" %}</div>
+                                <div class="value">{{ award.data.document_number }}</div>
+                            </div>
+                            <div class="row">
+                                <div class="label">{% trans "Course / Certificate Title" %}</div>
+                                <div class="value">{{ award.data.completion_title }}</div>
+                            </div>
+                            <div class="row">
+                                <div class="label">{% trans "Issue Date" %}</div>
+                                <div class="value">{{ award.data.issue_date }}</div>
+                            </div>
+                            {% if award.data.expiration_date %}
+                                <div class="row">
+                                    <div class="label">{% trans "Expiration Date" %}</div>
+                                    <div class="value">{{ award.data.expiration_date }}</div>
+                                </div>
+                            {% endif %}
+                            <div class="row">
+                                <div class="label">{% trans "Issuing Authority" %}</div>
+                                <div class="value">{{ award.data.issuer_name }}</div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            {% trans "Verified by the official certificate database at the time shown below." %}
+                            <br />
+                            {% trans "Verification Timestamp" %}: {{ now|date:"Y-m-d H:i:s" }}
+                            <div class="seal">✔ {% trans "System Verified" %}</div>
+                        </div>
+                    {% else %}
+                        <div class="status invalid">✕ {% trans "Certificate not found" %}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </body>
+    </html>
+{% endspaceless %}

@@ -1,0 +1,6 @@
+<mj-section padding-top="20px" padding-bottom="0">
+  <mj-raw>
+    <img src="{% static 'image/logo/logo.png' %}" alt="{{ platform_name }}" style="height: 32px; width: auto; display: block; margin: auto; padding: 10px 0;" />
+  </mj-raw>
+</mj-section>
+

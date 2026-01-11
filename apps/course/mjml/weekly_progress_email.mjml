@@ -1,0 +1,45 @@
+{% spaceless %}
+{% load i18n static %}
+<mjml>
+  <mj-head>
+    <mj-title>{% blocktranslate with platform_name=platform_name %}{{ platform_name }} Course weekly progress{% endblocktranslate %}</mj-title>
+    <mj-include path="./partial/attributes.mjml" />
+    <mj-include path="./partial/style.mjml" />
+  </mj-head>
+  <mj-body background-color="#f3f4f6">
+    <mj-include path="./partial/header.mjml" />
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" padding-bottom="20px">{% translate "Your Weekly Course Progress" %}</mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate %}Hello { name },{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate with course_title=course_title %}Here's your weekly progress update for <strong>{ course_title }</strong>.{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="10px">
+          {% translate "Course Progress Summary:" %}
+        </mj-text>
+        <mj-text padding-left="15px" padding-bottom="15px">
+          • {% blocktranslate with completed=completed_lessons total=total_lessons %}Completed Lessons: { completed } / { total }{% endblocktranslate %}<br>
+          • {% blocktranslate with percentage=progress_percentage %}Current Progress: { percentage }%{% endblocktranslate %}<br>
+          • {% blocktranslate with deadline=upcoming_deadline %}Upcoming Deadlines: { deadline }{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="20px">
+          {% translate "You're making great progress! Keep up the good work and stay on track with your learning goals." %}
+        </mj-text>
+        <mj-button href="{ course_url }" width="200px" padding="20px 0" background-color="#4F46E5" role="button">
+          {% translate "Continue Learning" %}
+        </mj-button>
+        <mj-text padding-top="20px" padding-bottom="10px">
+          {% translate "If the button above doesn't work, you can also access your course by copying and pasting the following link into your browser:" %}
+        </mj-text>
+        <mj-text font-size="14px" color="#4F46E5" word-break="break-all">
+          { course_url }
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-include path="./partial/footer.mjml" />
+  </mj-body>
+</mjml>
+{% endspaceless %}

@@ -1,0 +1,5 @@
+<mj-style>
+  .header-image { border-radius: 4px; }
+  .footer-link { color: #6b7280; text-decoration: none; }
+</mj-style>
+

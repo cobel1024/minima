@@ -1,0 +1,44 @@
+{% spaceless %}
+{% load i18n static %}
+<mjml>
+  <mj-head>
+    <mj-title>{% blocktranslate with platform_name=platform_name %}{{ platform_name }} Course grading completed{% endblocktranslate %}</mj-title>
+    <mj-include path="./partial/attributes.mjml" />
+    <mj-include path="./partial/style.mjml" />
+  </mj-head>
+  <mj-body background-color="#f3f4f6">
+    <mj-include path="./partial/header.mjml" />
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" padding-bottom="20px">{% translate "Grading Complete - Results Available" %}</mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate %}Hello { name },{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate with course_title=course_title %}Great news! The grading for <strong>{ course_title }</strong> has been completed and your results are now available.{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="10px">
+          {% translate "Important Information:" %}
+        </mj-text>
+        <mj-text padding-left="15px" padding-bottom="15px">
+          • {% blocktranslate with completion_date=completion_date %}Grading Completed: { completion_date }{% endblocktranslate %}<br>
+          • {% blocktranslate with final_score=final_score %}Your Final Score: { final_score }{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="20px">
+          {% translate "Congratulations on completing the course! Your final results have been calculated and are now available for review. If you meet the completion criteria, your certificate will be generated and available for download." %}
+        </mj-text>
+        <mj-button href="{ course_url }" width="200px" padding="20px 0" background-color="#4F46E5" role="button">
+          {% translate "View Results" %}
+        </mj-button>
+        <mj-text padding-top="20px" padding-bottom="10px">
+          {% translate "If the button above doesn't work, you can also view your results by copying and pasting the following link into your browser:" %}
+        </mj-text>
+        <mj-text font-size="14px" color="#4F46E5" word-break="break-all">
+          { course_url }
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-include path="./partial/footer.mjml" />
+  </mj-body>
+</mjml>
+{% endspaceless %}

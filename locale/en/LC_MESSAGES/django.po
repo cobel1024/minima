@@ -1,0 +1,3654 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-11 09:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/account/admin.py:41
+msgid "Change History"
+msgstr ""
+
+#: apps/account/admin.py:42
+msgid "Change Histories"
+msgstr ""
+
+#: apps/account/admin.py:46
+msgid "Login Token"
+msgstr ""
+
+#: apps/account/admin.py:47
+msgid "Login Tokens"
+msgstr ""
+
+#: apps/account/admin.py:51 apps/account/models.py:600
+msgid "OTP Log"
+msgstr ""
+
+#: apps/account/admin.py:52 apps/account/models.py:601
+msgid "OTP Logs"
+msgstr ""
+
+#: apps/account/admin.py:60
+msgid "Create temporary password"
+msgstr ""
+
+#: apps/account/admin.py:80
+#, python-brace-format
+msgid ""
+"Temporary password created for {user}: {password}. Expires in {hours} hours."
+msgstr ""
+
+#: apps/account/admin.py:93 minima/settings.py:145
+msgid "English"
+msgstr ""
+
+#: apps/account/admin.py:93 minima/settings.py:145
+msgid "Korean"
+msgstr ""
+
+#: apps/account/apps.py:8
+msgid "Account"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:5
+#, python-format
+msgid "%(platform_name)s Email Address Verification"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:13
+msgid "Verify Your Email"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:15 apps/account/mjml/email_change.mjml:15
+#: apps/account/mjml/password_change.mjml:15
+#: apps/course/mjml/certificate_issued_email.mjml:15
+#: apps/course/mjml/end_today_email.mjml:15
+#: apps/course/mjml/exam_today_email.mjml:15
+#: apps/course/mjml/grade_completed_email.mjml:15
+#: apps/course/mjml/start_today_email.mjml:17
+#: apps/course/mjml/weekly_progress_email.mjml:15
+msgid "Hello { name },"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:18
+#, python-format
+msgid ""
+"Thank you for joining for %(platform_name)s. Please verify your email "
+"address by clicking the button below:"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:21
+msgid "Verify Email"
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:24
+#, python-format
+msgid ""
+"This verification link will expire in { expiry_hours } hours. If you did not "
+"join for a %(platform_name)s account, please ignore this email."
+msgstr ""
+
+#: apps/account/mjml/activation.mjml:27 apps/account/mjml/email_change.mjml:27
+msgid ""
+"If the button above doesn't work, you can also verify your email by copying "
+"and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/account/mjml/email_change.mjml:5
+#, python-format
+msgid "%(platform_name)s Email Change Verification"
+msgstr ""
+
+#: apps/account/mjml/email_change.mjml:13
+#: apps/account/mjml/email_change.mjml:21
+msgid "Verify Email Change"
+msgstr ""
+
+#: apps/account/mjml/email_change.mjml:18
+#, python-format
+msgid ""
+"We received a request to change the email address for your %(platform_name)s "
+"account. Please verify your new email address by clicking the button below:"
+msgstr ""
+
+#: apps/account/mjml/email_change.mjml:24
+#, python-format
+msgid ""
+"This verification link will expire in { expiry_hours } hours. If you did not "
+"request an email change for your %(platform_name)s account, please ignore "
+"this email and contact our support team."
+msgstr ""
+
+#: apps/account/mjml/email_change.mjml:33
+msgid ""
+"For security purposes, this email was sent to both your previous and new "
+"email addresses."
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:5
+#, python-format
+msgid "%(platform_name)s Password Reset"
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:13
+msgid "Reset Your Password"
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:18
+#, python-format
+msgid ""
+"We received a request to reset your password for your %(platform_name)s "
+"account. To reset your password, please click the button below:"
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:21
+msgid "Reset Password"
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:24
+msgid ""
+"This password reset link will expire in { expiry_hours } hours. If you did "
+"not request a password reset, please ignore this email."
+msgstr ""
+
+#: apps/account/mjml/password_change.mjml:27
+msgid ""
+"If the button above doesn't work, you can also reset your password by "
+"copying and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/account/models.py:104 apps/operation/models.py:162
+#: apps/operation/models.py:497 apps/partner/models.py:40
+#: apps/partner/models.py:80
+msgid "Email"
+msgstr ""
+
+#: apps/account/models.py:105 apps/assignment/models.py:484
+#: apps/assignment/models.py:502 apps/assignment/models.py:521
+#: apps/assistant/models.py:39 apps/competency/models.py:59
+#: apps/competency/models.py:103 apps/competency/models.py:124
+#: apps/competency/models.py:143 apps/competency/models.py:168
+#: apps/competency/models.py:234 apps/learning/models.py:234
+#: apps/operation/models.py:62 apps/operation/models.py:161
+#: apps/operation/models.py:195 apps/partner/models.py:37
+#: apps/partner/models.py:60 apps/partner/models.py:79
+#: apps/partner/models.py:129 apps/store/models.py:55 apps/store/models.py:102
+#: apps/store/models.py:342
+msgid "Name"
+msgstr ""
+
+#: apps/account/models.py:106 apps/assistant/models.py:41
+#: apps/operation/models.py:165
+msgid "Avatar"
+msgstr ""
+
+#: apps/account/models.py:107
+msgid "Nickname"
+msgstr ""
+
+#: apps/account/models.py:108 apps/partner/models.py:39
+#: apps/partner/models.py:83
+msgid "Phone"
+msgstr ""
+
+#: apps/account/models.py:109 apps/partner/models.py:81
+msgid "Birth Date"
+msgstr ""
+
+#: apps/account/models.py:110 apps/content/models.py:142
+msgid "Language"
+msgstr ""
+
+#: apps/account/models.py:111
+msgid "Preferences"
+msgstr ""
+
+#: apps/account/models.py:113 apps/assignment/models.py:274
+#: apps/assistant/models.py:69 apps/competency/models.py:171
+#: apps/competency/models.py:239 apps/course/models.py:493
+#: apps/discussion/models.py:205 apps/exam/models.py:233
+#: apps/learning/models.py:65 apps/learning/models.py:236
+#: apps/operation/models.py:166 apps/operation/models.py:214
+#: apps/operation/models.py:531 apps/quiz/models.py:97 apps/store/models.py:107
+#: apps/store/models.py:149 apps/survey/models.py:91
+msgid "Active"
+msgstr ""
+
+#: apps/account/models.py:114
+msgid "Staff"
+msgstr ""
+
+#: apps/account/models.py:115
+msgid "Superuser"
+msgstr ""
+
+#: apps/account/models.py:126 apps/account/models.py:531
+#: apps/account/models.py:547 apps/account/models.py:566
+#: apps/account/models.py:589 apps/assistant/models.py:55
+#: apps/assistant/models.py:68 apps/competency/models.py:142
+#: apps/content/models.py:153 apps/content/models.py:265
+#: apps/learning/models.py:64 apps/learning/models.py:377
+#: apps/operation/models.py:149 apps/operation/models.py:507
+#: apps/operation/models.py:630 apps/partner/admin.py:59
+#: apps/partner/models.py:89 apps/partner/models.py:161
+#: apps/store/models.py:148
+msgid "User"
+msgstr ""
+
+#: apps/account/models.py:127
+msgid "Users"
+msgstr ""
+
+#: apps/account/models.py:269
+msgid "Account Activation"
+msgstr ""
+
+#: apps/account/models.py:287
+msgid "Email Change"
+msgstr ""
+
+#: apps/account/models.py:298
+msgid "Password Change"
+msgstr ""
+
+#: apps/account/models.py:532
+msgid "Password"
+msgstr ""
+
+#: apps/account/models.py:533 apps/account/models.py:568
+#: apps/account/models.py:580 apps/competency/models.py:220
+#: apps/competency/models.py:296 apps/store/models.py:344
+msgid "Expires"
+msgstr ""
+
+#: apps/account/models.py:536
+msgid "Temporary Password"
+msgstr ""
+
+#: apps/account/models.py:537
+msgid "Temporary Passwords"
+msgstr ""
+
+#: apps/account/models.py:543
+msgid "Bookmark"
+msgstr ""
+
+#: apps/account/models.py:544
+msgid "Like"
+msgstr ""
+
+#: apps/account/models.py:545
+msgid "Flag"
+msgstr ""
+
+#: apps/account/models.py:548 apps/operation/models.py:528
+#: apps/store/models.py:100 apps/tracking/admin.py:35
+msgid "Kind"
+msgstr ""
+
+#: apps/account/models.py:549
+msgid "Target Type"
+msgstr ""
+
+#: apps/account/models.py:550
+msgid "Target ID"
+msgstr ""
+
+#: apps/account/models.py:554
+msgid "Reaction"
+msgstr ""
+
+#: apps/account/models.py:555
+msgid "Reactions"
+msgstr ""
+
+#: apps/account/models.py:567 apps/account/models.py:573
+#: apps/account/models.py:579
+msgid "Token"
+msgstr ""
+
+#: apps/account/models.py:569
+msgid "IP Address"
+msgstr ""
+
+#: apps/account/models.py:570
+msgid "User Agent"
+msgstr ""
+
+#: apps/account/models.py:574
+msgid "Tokens"
+msgstr ""
+
+#: apps/account/models.py:583
+msgid "Blacklisted Token"
+msgstr ""
+
+#: apps/account/models.py:584
+msgid "Blacklisted Tokens"
+msgstr ""
+
+#: apps/account/models.py:590 apps/competency/models.py:58
+#: apps/competency/models.py:102 apps/competency/models.py:123
+#: apps/operation/models.py:183 apps/store/models.py:101
+msgid "Code"
+msgstr ""
+
+#: apps/account/models.py:591
+msgid "Success"
+msgstr ""
+
+#: apps/account/models.py:592
+msgid "Fingerprint"
+msgstr ""
+
+#: apps/account/models.py:593
+msgid "Device Type"
+msgstr ""
+
+#: apps/account/models.py:595
+msgid "Consumer Type"
+msgstr ""
+
+#: apps/account/models.py:596
+msgid "Consumer ID"
+msgstr ""
+
+#: apps/assignment/admin.py:111 apps/assignment/admin.py:112
+#: apps/content/admin.py:47 apps/content/admin.py:48
+#: apps/discussion/admin.py:63 apps/discussion/admin.py:64
+#: apps/operation/admin.py:93 apps/operation/admin.py:94
+#: apps/operation/admin.py:130 apps/operation/admin.py:131
+#: apps/operation/models.py:234 apps/operation/models.py:255
+msgid "Attachments"
+msgstr ""
+
+#: apps/assignment/admin.py:116 apps/exam/admin.py:93
+msgid "Submission History"
+msgstr ""
+
+#: apps/assignment/admin.py:117 apps/exam/admin.py:94
+msgid "Submission Histories"
+msgstr ""
+
+#: apps/assignment/admin.py:140 apps/discussion/admin.py:86
+#: apps/exam/admin.py:108
+msgid "Grading History"
+msgstr ""
+
+#: apps/assignment/admin.py:141 apps/discussion/admin.py:87
+#: apps/exam/admin.py:109
+msgid "Grading Histories"
+msgstr ""
+
+#: apps/assignment/admin.py:147 apps/assignment/models.py:419
+#: apps/course/admin.py:129 apps/discussion/admin.py:92
+#: apps/discussion/models.py:410 apps/exam/admin.py:115 apps/exam/models.py:378
+#: apps/quiz/models.py:129
+msgid "Grade"
+msgstr ""
+
+#: apps/assignment/admin.py:161 apps/common/models.py:194
+#: apps/discussion/admin.py:111 apps/exam/admin.py:127
+msgid "Earned Details"
+msgstr ""
+
+#: apps/assignment/admin.py:166 apps/common/models.py:199
+#: apps/discussion/admin.py:121 apps/exam/admin.py:132
+msgid "Feedback"
+msgstr ""
+
+#: apps/assignment/apps.py:8 apps/assignment/models.py:188
+#: apps/assignment/models.py:270
+msgid "Assignment"
+msgstr ""
+
+#: apps/assignment/models.py:69 apps/assistant/models.py:67
+#: apps/common/models.py:171 apps/course/models.py:86 apps/course/models.py:280
+#: apps/discussion/models.py:70 apps/discussion/models.py:316
+#: apps/exam/models.py:68 apps/operation/models.py:117
+#: apps/operation/models.py:182 apps/operation/models.py:363
+#: apps/operation/models.py:503 apps/operation/models.py:529
+#: apps/operation/models.py:651 apps/quiz/models.py:33 apps/survey/models.py:31
+msgid "Title"
+msgstr ""
+
+#: apps/assignment/models.py:70 apps/assignment/models.py:485
+#: apps/assignment/models.py:503 apps/assignment/models.py:522
+#: apps/assistant/models.py:40 apps/common/models.py:172
+#: apps/competency/models.py:144 apps/competency/models.py:169
+#: apps/competency/models.py:235 apps/course/models.py:87
+#: apps/course/models.py:281 apps/discussion/models.py:71
+#: apps/exam/models.py:69 apps/learning/models.py:235
+#: apps/operation/models.py:196 apps/operation/models.py:530
+#: apps/operation/models.py:652 apps/partner/models.py:38
+#: apps/partner/models.py:61 apps/partner/models.py:130 apps/quiz/models.py:34
+#: apps/store/models.py:56 apps/store/models.py:103 apps/survey/models.py:32
+msgid "Description"
+msgstr ""
+
+#: apps/assignment/models.py:71 apps/assignment/models.py:183
+#: apps/content/models.py:66 apps/course/models.py:111
+#: apps/discussion/models.py:72 apps/discussion/models.py:128
+#: apps/exam/models.py:70 apps/exam/models.py:133 apps/operation/models.py:229
+#: apps/quiz/models.py:35 apps/quiz/models.py:82 apps/survey/models.py:33
+#: apps/survey/models.py:67
+msgid "Owner"
+msgstr ""
+
+#: apps/assignment/models.py:74 apps/assignment/models.py:94
+#: apps/assignment/models.py:185 apps/discussion/models.py:75
+#: apps/discussion/models.py:92 apps/discussion/models.py:130
+#: apps/exam/models.py:74 apps/exam/models.py:99 apps/exam/models.py:135
+#: apps/quiz/models.py:39 apps/quiz/models.py:54 apps/quiz/models.py:83
+msgid "Question Pool"
+msgstr ""
+
+#: apps/assignment/models.py:75 apps/discussion/models.py:76
+#: apps/exam/models.py:75 apps/quiz/models.py:40
+msgid "Question Pools"
+msgstr ""
+
+#: apps/assignment/models.py:95 apps/assignment/models.py:103
+#: apps/assignment/models.py:117 apps/assignment/models.py:272
+#: apps/discussion/models.py:98 apps/discussion/models.py:203
+#: apps/exam/admin.py:69 apps/exam/models.py:101 apps/exam/models.py:107
+#: apps/exam/models.py:120 apps/operation/models.py:212
+#: apps/operation/models.py:364 apps/quiz/models.py:55 apps/quiz/models.py:61
+#: apps/quiz/models.py:71 apps/survey/models.py:53 apps/survey/models.py:61
+msgid "Question"
+msgstr ""
+
+#: apps/assignment/models.py:96 apps/discussion/models.py:94
+#: apps/exam/models.py:102 apps/quiz/models.py:56 apps/survey/models.py:54
+msgid "Supplement"
+msgstr ""
+
+#: apps/assignment/models.py:97
+msgid "Attachment File Count"
+msgstr ""
+
+#: apps/assignment/models.py:98
+msgid "Attachment File Types"
+msgstr ""
+
+#: apps/assignment/models.py:99
+msgid "Sample Attachment"
+msgstr ""
+
+#: apps/assignment/models.py:100
+msgid "Plagiarism Threshold Percentage"
+msgstr ""
+
+#: apps/assignment/models.py:104 apps/discussion/models.py:99
+#: apps/exam/admin.py:70 apps/exam/models.py:108 apps/exam/models.py:231
+#: apps/quiz/models.py:62 apps/quiz/models.py:96 apps/survey/models.py:62
+msgid "Questions"
+msgstr ""
+
+#: apps/assignment/models.py:118 apps/assignment/models.py:488
+#: apps/assignment/models.py:501
+msgid "Rubric"
+msgstr ""
+
+#: apps/assignment/models.py:119 apps/exam/models.py:123
+#: apps/operation/admin.py:143 apps/operation/models.py:446
+#: apps/quiz/models.py:73
+msgid "Explanation"
+msgstr ""
+
+#: apps/assignment/models.py:120 apps/exam/models.py:124
+msgid "Reference"
+msgstr ""
+
+#: apps/assignment/models.py:123 apps/exam/models.py:127 apps/quiz/models.py:76
+msgid "Solution"
+msgstr ""
+
+#: apps/assignment/models.py:124 apps/exam/models.py:128 apps/quiz/models.py:77
+msgid "Solutions"
+msgstr ""
+
+#: apps/assignment/models.py:184 apps/course/models.py:117
+#: apps/discussion/models.py:129 apps/exam/models.py:134
+#: apps/operation/models.py:186 apps/operation/tests/factories.py:65
+msgid "Honor Code"
+msgstr ""
+
+#: apps/assignment/models.py:189
+msgid "Assignments"
+msgstr ""
+
+#: apps/assignment/models.py:271 apps/course/models.py:491
+#: apps/discussion/models.py:202 apps/exam/models.py:230
+#: apps/operation/models.py:445 apps/quiz/models.py:94
+msgid "Learner"
+msgstr ""
+
+#: apps/assignment/models.py:273 apps/discussion/models.py:204
+#: apps/exam/models.py:232 apps/quiz/models.py:95
+msgid "Attempt Start"
+msgstr ""
+
+#: apps/assignment/models.py:275 apps/competency/models.py:299
+#: apps/content/models.py:159 apps/content/models.py:268
+#: apps/discussion/models.py:206 apps/exam/models.py:234 apps/quiz/models.py:98
+msgid "Context Key"
+msgstr ""
+
+#: apps/assignment/models.py:278 apps/assignment/models.py:382
+#: apps/assignment/models.py:415 apps/assignment/models.py:447
+#: apps/discussion/models.py:209 apps/discussion/models.py:314
+#: apps/discussion/models.py:406 apps/exam/models.py:237
+#: apps/exam/models.py:348 apps/exam/models.py:358 apps/exam/models.py:374
+#: apps/quiz/models.py:101 apps/quiz/models.py:116 apps/quiz/models.py:126
+msgid "Attempt"
+msgstr ""
+
+#: apps/assignment/models.py:279 apps/discussion/models.py:210
+#: apps/exam/models.py:238 apps/quiz/models.py:102
+msgid "Attempts"
+msgstr ""
+
+#: apps/assignment/models.py:383 apps/operation/models.py:213
+#: apps/operation/models.py:429
+msgid "Answer"
+msgstr ""
+
+#: apps/assignment/models.py:384
+msgid "Extracted Text"
+msgstr ""
+
+#: apps/assignment/models.py:387 apps/exam/models.py:362
+#: apps/quiz/models.py:120 apps/survey/models.py:94
+msgid "Submission"
+msgstr ""
+
+#: apps/assignment/models.py:388 apps/exam/models.py:363
+#: apps/quiz/models.py:121 apps/survey/models.py:95
+msgid "Submissions"
+msgstr ""
+
+#: apps/assignment/models.py:416 apps/course/models.py:699
+#: apps/discussion/models.py:407 apps/exam/models.py:375
+msgid "Grader"
+msgstr ""
+
+#: apps/assignment/models.py:420 apps/discussion/models.py:411
+#: apps/exam/models.py:379 apps/quiz/models.py:130
+msgid "Grades"
+msgstr ""
+
+#: apps/assignment/models.py:442
+msgid "Not Detected"
+msgstr ""
+
+#: apps/assignment/models.py:443
+msgid "Detected"
+msgstr ""
+
+#: apps/assignment/models.py:444
+msgid "Excused"
+msgstr ""
+
+#: apps/assignment/models.py:445
+msgid "Not Resolved"
+msgstr ""
+
+#: apps/assignment/models.py:448 apps/store/models.py:54
+#: apps/store/models.py:185 apps/store/models.py:361 apps/store/models.py:381
+msgid "Status"
+msgstr ""
+
+#: apps/assignment/models.py:449
+msgid "Similarity Percentage"
+msgstr ""
+
+#: apps/assignment/models.py:450
+msgid "Flagged Text"
+msgstr ""
+
+#: apps/assignment/models.py:451
+msgid "Source Text"
+msgstr ""
+
+#: apps/assignment/models.py:452
+msgid "Source User ID"
+msgstr ""
+
+#: apps/assignment/models.py:453 apps/store/models.py:385
+msgid "Reason"
+msgstr ""
+
+#: apps/assignment/models.py:456
+msgid "Plagiarism Check"
+msgstr ""
+
+#: apps/assignment/models.py:457
+msgid "Plagiarism Checks"
+msgstr ""
+
+#: apps/assignment/models.py:489
+msgid "Rubrics"
+msgstr ""
+
+#: apps/assignment/models.py:506
+msgid "Rubric Criterion"
+msgstr ""
+
+#: apps/assignment/models.py:507
+msgid "Rubric Criteria"
+msgstr ""
+
+#: apps/assignment/models.py:520
+msgid "Criterion"
+msgstr ""
+
+#: apps/assignment/models.py:523 apps/exam/models.py:104 apps/quiz/models.py:58
+msgid "Point"
+msgstr ""
+
+#: apps/assignment/models.py:526
+msgid "Performance Level"
+msgstr ""
+
+#: apps/assignment/models.py:527
+msgid "Performance Levels"
+msgstr ""
+
+#: apps/assistant/admin.py:12 apps/assistant/admin.py:13
+#: apps/assistant/models.py:110
+msgid "Chat Messages"
+msgstr ""
+
+#: apps/assistant/apps.py:7
+msgid "AI Assistant"
+msgstr ""
+
+#: apps/assistant/management/commands/create_assistant_bot.py:14
+msgid "General purpose AI assistant for learning support"
+msgstr ""
+
+#: apps/assistant/models.py:36
+msgid "Assistant"
+msgstr ""
+
+#: apps/assistant/models.py:37
+msgid "Curator"
+msgstr ""
+
+#: apps/assistant/models.py:42
+msgid "Plugin"
+msgstr ""
+
+#: apps/assistant/models.py:43
+msgid "System Instruction"
+msgstr ""
+
+#: apps/assistant/models.py:46
+msgid "Assistant Bot"
+msgstr ""
+
+#: apps/assistant/models.py:47
+msgid "Assistant Bots"
+msgstr ""
+
+#: apps/assistant/models.py:56 apps/content/models.py:267
+#: apps/content/models.py:272 apps/course/models.py:698
+#: apps/learning/models.py:380
+msgid "Note"
+msgstr ""
+
+#: apps/assistant/models.py:59
+msgid "Assistant Note"
+msgstr ""
+
+#: apps/assistant/models.py:60
+msgid "Assistant Notes"
+msgstr ""
+
+#: apps/assistant/models.py:70
+msgid "Message Count"
+msgstr ""
+
+#: apps/assistant/models.py:71
+msgid "Last Message"
+msgstr ""
+
+#: apps/assistant/models.py:72
+msgid "Bot"
+msgstr ""
+
+#: apps/assistant/models.py:75 apps/assistant/models.py:98
+msgid "Chat"
+msgstr ""
+
+#: apps/assistant/models.py:76
+msgid "Chats"
+msgstr ""
+
+#: apps/assistant/models.py:99 apps/operation/models.py:514
+msgid "Message"
+msgstr ""
+
+#: apps/assistant/models.py:100
+msgid "Response"
+msgstr ""
+
+#: apps/assistant/models.py:101 apps/content/models.py:70
+#: apps/tracking/admin.py:27
+msgid "URL"
+msgstr ""
+
+#: apps/assistant/models.py:102 apps/common/models.py:200
+#: apps/store/models.py:357 apps/store/models.py:378
+msgid "Completed"
+msgstr ""
+
+#: apps/assistant/models.py:103
+msgid "Bookmarked"
+msgstr ""
+
+#: apps/assistant/models.py:104 apps/operation/models.py:681
+msgid "Rating"
+msgstr ""
+
+#: apps/assistant/models.py:105
+msgid "Input Tokens"
+msgstr ""
+
+#: apps/assistant/models.py:106
+msgid "Output Tokens"
+msgstr ""
+
+#: apps/assistant/models.py:109
+msgid "Chat Message"
+msgstr ""
+
+#: apps/assistant/models.py:143
+msgid "New Chat"
+msgstr ""
+
+#: apps/common/admin.py:117 apps/common/admin.py:128
+msgid "Edit"
+msgstr ""
+
+#: apps/common/admin.py:292
+msgid "Detail"
+msgstr ""
+
+#: apps/common/admin.py:301
+msgid "Open"
+msgstr ""
+
+#: apps/common/apps.py:16
+msgid "Apps"
+msgstr ""
+
+#: apps/common/management/commands/convert_mjml.py:13
+msgid "Convert MJML templates to HTML for all apps"
+msgstr ""
+
+#: apps/common/management/commands/convert_mjml.py:21
+msgid "Apps directory not found"
+msgstr ""
+
+#: apps/common/management/commands/convert_mjml.py:37
+msgid ""
+"\n"
+"No MJML files found in any app"
+msgstr ""
+
+#: apps/common/mjml/partial/footer.mjml:6
+#, python-format
+msgid ""
+"Need help? Contact our support team at <a href=\"mailto:%(support_email)s\" "
+"class=\"footer-link\">%(support_email)s</a>"
+msgstr ""
+
+#: apps/common/mjml/partial/footer.mjml:13
+#, python-format
+msgid "&copy; %(year)s %(platform_name)s. All rights reserved."
+msgstr ""
+
+#: apps/common/mjml/partial/footer.mjml:19 apps/operation/models.py:523
+msgid "Privacy Policy"
+msgstr ""
+
+#: apps/common/mjml/partial/footer.mjml:20 apps/operation/models.py:522
+msgid "Terms of Service"
+msgstr ""
+
+#: apps/common/models.py:31
+msgid "ID"
+msgstr ""
+
+#: apps/common/models.py:41
+msgid "Created"
+msgstr ""
+
+#: apps/common/models.py:42
+msgid "Modified"
+msgstr ""
+
+#: apps/common/models.py:49
+msgid "Ordering"
+msgstr ""
+
+#: apps/common/models.py:64
+msgid "ordering_group must be defined in subclass"
+msgstr ""
+
+#: apps/common/models.py:162 apps/operation/models.py:230
+#: apps/operation/models.py:680
+msgid "Deleted"
+msgstr ""
+
+#: apps/common/models.py:173
+msgid "Audience"
+msgstr ""
+
+#: apps/common/models.py:174 apps/competency/models.py:237
+#: apps/competency/models.py:294 apps/content/models.py:65
+#: apps/store/models.py:57
+msgid "Thumbnail"
+msgstr ""
+
+#: apps/common/models.py:175
+msgid "Featured"
+msgstr ""
+
+#: apps/common/models.py:176 apps/content/models.py:67 apps/exam/models.py:100
+#: apps/survey/models.py:52
+msgid "Format"
+msgstr ""
+
+#: apps/common/models.py:177 apps/content/models.py:68 apps/exam/models.py:136
+msgid "Duration"
+msgstr ""
+
+#: apps/common/models.py:178
+msgid "Passing Point"
+msgstr ""
+
+#: apps/common/models.py:179
+msgid "Max Attempts"
+msgstr ""
+
+#: apps/common/models.py:180
+msgid "Verification Required"
+msgstr ""
+
+#: apps/common/models.py:195
+msgid "Possible Point"
+msgstr ""
+
+#: apps/common/models.py:196
+msgid "Earned Point"
+msgstr ""
+
+#: apps/common/models.py:197 apps/course/models.py:694
+msgid "Score"
+msgstr ""
+
+#: apps/common/models.py:198 apps/content/models.py:158
+#: apps/course/models.py:696
+msgid "Passed"
+msgstr ""
+
+#: apps/common/models.py:201 apps/course/models.py:697
+msgid "Confirmed"
+msgstr ""
+
+#: apps/common/models.py:208
+msgid "Cannot confirm without completion"
+msgstr ""
+
+#: apps/common/models.py:213
+msgid "Grading Due Days"
+msgstr ""
+
+#: apps/common/models.py:214
+msgid "Appeal Deadline Days"
+msgstr ""
+
+#: apps/common/models.py:215
+msgid "Confirm Due Days"
+msgstr ""
+
+#: apps/common/translation.py:5
+msgid "Add new item"
+msgstr ""
+
+#: apps/common/translation.py:6
+msgid "Type to search"
+msgstr ""
+
+#: apps/common/translation.py:7
+msgid "No results found"
+msgstr ""
+
+#: apps/common/translation.py:8
+msgid ""
+"This page yielded into no results. Create a new item or reset your filters."
+msgstr ""
+
+#: apps/common/translation.py:9
+msgid "Date"
+msgstr ""
+
+#: apps/common/translation.py:10
+msgid "App label"
+msgstr ""
+
+#: apps/common/translation.py:11
+msgid "Dark"
+msgstr ""
+
+#: apps/common/translation.py:12
+msgid "Light"
+msgstr ""
+
+#: apps/common/translation.py:13
+msgid "System"
+msgstr ""
+
+#: apps/common/translation.py:14
+msgid "You have been successfully logged out from the administration"
+msgstr ""
+
+#: apps/common/translation.py:15
+msgid "Welcome back to"
+msgstr ""
+
+#: apps/common/translation.py:16
+msgid "Return to site"
+msgstr ""
+
+#: apps/common/translation.py:18
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">this form</a>."
+msgstr ""
+
+#: apps/common/translation.py:22
+msgid "Select action"
+msgstr ""
+
+#: apps/common/translation.py:23
+msgid "Select value"
+msgstr ""
+
+#: apps/common/translation.py:24
+msgid "Run"
+msgstr ""
+
+#: apps/common/translation.py:25
+msgid "True"
+msgstr ""
+
+#: apps/common/translation.py:26
+msgid "False"
+msgstr ""
+
+#: apps/common/translation.py:27
+msgid "Unknown"
+msgstr ""
+
+#: apps/common/translation.py:28
+msgid "previous"
+msgstr ""
+
+#: apps/common/translation.py:29
+msgid "next"
+msgstr ""
+
+#: apps/common/translation.py:30
+msgid "content"
+msgstr ""
+
+#: apps/common/translation.py:31
+msgid "Choose file to upload"
+msgstr ""
+
+#: apps/common/translation.py:32
+msgid "No recent searches"
+msgstr ""
+
+#: apps/common/translation.py:33
+msgid "Search apps and models..."
+msgstr ""
+
+#: apps/common/translation.py:34
+msgid "General"
+msgstr ""
+
+#: apps/common/translation.py:37
+msgid "Relative to"
+msgstr ""
+
+#: apps/common/translation.py:38
+msgid "Position"
+msgstr ""
+
+#: apps/common/translation.py:39
+msgid "First child of"
+msgstr ""
+
+#: apps/common/translation.py:40
+msgid "Before"
+msgstr ""
+
+#: apps/common/translation.py:41
+msgid "After"
+msgstr ""
+
+#: apps/common/translation.py:44
+msgid "A comma-separated list of tags."
+msgstr ""
+
+#: apps/common/translation.py:45
+msgctxt "A tag name"
+msgid "name"
+msgstr ""
+
+#: apps/common/translation.py:46
+msgctxt "A tag slug"
+msgid "slug"
+msgstr ""
+
+#: apps/common/translation.py:47
+msgid "tags"
+msgstr ""
+
+#: apps/common/translation.py:48
+msgid "Taggit"
+msgstr ""
+
+#: apps/common/translation.py:53
+#, python-brace-format
+msgctxt "{example_number} is a national phone number."
+msgid ""
+"Enter a valid phone number (e.g. {example_number}) or a number with an "
+"international call prefix."
+msgstr ""
+
+#: apps/common/translation.py:57
+msgid "unit"
+msgstr ""
+
+#: apps/common/translation.py:58
+msgid "Subject"
+msgstr ""
+
+#: apps/common/translation.py:59
+msgid "Training"
+msgstr ""
+
+#: apps/common/translation.py:60
+msgid "Item"
+msgstr ""
+
+#: apps/common/translation.py:61
+msgid "Filters"
+msgstr ""
+
+#: apps/common/translation.py:62
+msgid "Apply Filters"
+msgstr ""
+
+#: apps/common/translation.py:63
+msgid "Insert"
+msgstr ""
+
+#: apps/common/translation.py:64
+msgid "Update"
+msgstr ""
+
+#: apps/common/translation.py:65
+msgid "Delete"
+msgstr ""
+
+#: apps/common/translation.py:69
+msgid "Parameters"
+msgstr ""
+
+#: apps/common/translation.py:70
+msgid "Result"
+msgstr ""
+
+#: apps/common/translation.py:71
+msgid "Celery Results"
+msgstr ""
+
+#: apps/common/translation.py:72
+msgid "Task ID"
+msgstr ""
+
+#: apps/common/translation.py:73
+msgid "Celery ID for the Task that was run"
+msgstr ""
+
+#: apps/common/translation.py:74
+msgid "Periodic Task Name"
+msgstr ""
+
+#: apps/common/translation.py:75
+msgid "Name of the Periodic Task which was run"
+msgstr ""
+
+#: apps/common/translation.py:76
+msgid "Task Name"
+msgstr ""
+
+#: apps/common/translation.py:77
+msgid "Name of the Task which was run"
+msgstr ""
+
+#: apps/common/translation.py:78
+msgid "Task Positional Arguments"
+msgstr ""
+
+#: apps/common/translation.py:79
+msgid "JSON representation of the positional arguments used with the task"
+msgstr ""
+
+#: apps/common/translation.py:80
+msgid "Task Named Arguments"
+msgstr ""
+
+#: apps/common/translation.py:81
+msgid "JSON representation of the named arguments used with the task"
+msgstr ""
+
+#: apps/common/translation.py:82
+msgid "Task State"
+msgstr ""
+
+#: apps/common/translation.py:83
+msgid "Current state of the task being run"
+msgstr ""
+
+#: apps/common/translation.py:84
+msgid "Worker"
+msgstr ""
+
+#: apps/common/translation.py:85
+msgid "Worker that executes the task"
+msgstr ""
+
+#: apps/common/translation.py:86
+msgid "Result Content Type"
+msgstr ""
+
+#: apps/common/translation.py:87
+msgid "Content type of the result data"
+msgstr ""
+
+#: apps/common/translation.py:88
+msgid "Result Encoding"
+msgstr ""
+
+#: apps/common/translation.py:89
+msgid "The encoding used to save the task result data"
+msgstr ""
+
+#: apps/common/translation.py:90
+msgid "Result Data"
+msgstr ""
+
+#: apps/common/translation.py:91
+msgid ""
+"The data returned by the task.  Use content_encoding and content_type fields "
+"to read."
+msgstr ""
+
+#: apps/common/translation.py:92
+msgid "Created DateTime"
+msgstr ""
+
+#: apps/common/translation.py:93
+msgid "Datetime field when the task result was created in UTC"
+msgstr ""
+
+#: apps/common/translation.py:94
+msgid "Started DateTime"
+msgstr ""
+
+#: apps/common/translation.py:95
+msgid "Datetime field when the task was started in UTC"
+msgstr ""
+
+#: apps/common/translation.py:96
+msgid "Completed DateTime"
+msgstr ""
+
+#: apps/common/translation.py:97
+msgid "Datetime field when the task was completed in UTC"
+msgstr ""
+
+#: apps/common/translation.py:98
+msgid "Traceback"
+msgstr ""
+
+#: apps/common/translation.py:99
+msgid "Text of the traceback if the task generated one"
+msgstr ""
+
+#: apps/common/translation.py:100
+msgid "Task Meta Information"
+msgstr ""
+
+#: apps/common/translation.py:101
+msgid ""
+"JSON meta information about the task, such as information on child tasks"
+msgstr ""
+
+#: apps/common/translation.py:102
+msgid "task result"
+msgstr ""
+
+#: apps/common/translation.py:103
+msgid "task results"
+msgstr ""
+
+#: apps/common/translation.py:104
+msgid "Group ID"
+msgstr ""
+
+#: apps/common/translation.py:105
+msgid "Celery ID for the Chord header group"
+msgstr ""
+
+#: apps/common/translation.py:106
+msgid ""
+"JSON serialized list of task result tuples. use .group_result() to decode"
+msgstr ""
+
+#: apps/common/translation.py:107
+msgid "Starts at len(chord header) and decrements after each task is finished"
+msgstr ""
+
+#: apps/common/translation.py:108
+msgid "Celery ID for the Group that was run"
+msgstr ""
+
+#: apps/common/translation.py:109
+msgid "Datetime field when the group result was created in UTC"
+msgstr ""
+
+#: apps/common/translation.py:110
+msgid "Datetime field when the group was completed in UTC"
+msgstr ""
+
+#: apps/common/translation.py:111
+msgid "group result"
+msgstr ""
+
+#: apps/common/translation.py:112
+msgid "group results"
+msgstr ""
+
+#: apps/common/translation.py:115
+msgid "periodic tasks"
+msgstr ""
+
+#: apps/common/translation.py:116
+msgid "intervals"
+msgstr ""
+
+#: apps/common/translation.py:117
+msgid "crontabs"
+msgstr ""
+
+#: apps/common/translation.py:118
+msgid "solar events"
+msgstr ""
+
+#: apps/common/translation.py:119
+msgid "clocked"
+msgstr ""
+
+#: apps/common/translation.py:122
+msgid "Please correct the errors below."
+msgstr ""
+
+#: apps/competency/apps.py:8
+msgid "Competency"
+msgstr ""
+
+#: apps/competency/certificate.py:269
+msgid "Completion Period"
+msgstr ""
+
+#: apps/competency/certificate.py:280
+msgid "Recipient Name"
+msgstr ""
+
+#: apps/competency/certificate.py:291
+msgid "Recipient Birth Date"
+msgstr ""
+
+#: apps/competency/certificate.py:302
+msgid "Completion Hours"
+msgstr ""
+
+#: apps/competency/certificate.py:313
+#: apps/competency/templates/competency/certificate_verification.html:214
+msgid "Issue Date"
+msgstr ""
+
+#: apps/competency/management/commands/load_ncs_data.py:15
+msgid ""
+"Import classifications, competency skills, and skill factors from Excel file"
+msgstr ""
+
+#: apps/competency/management/commands/load_ncs_data.py:22
+msgid "Path to the competency data excel file"
+msgstr ""
+
+#: apps/competency/management/commands/load_ncs_data.py:29
+#, python-format
+msgid "File not found: %s"
+msgstr ""
+
+#: apps/competency/management/commands/load_ncs_data.py:32
+#, python-format
+msgid "Processing file: %s"
+msgstr ""
+
+#: apps/competency/management/commands/load_ncs_data.py:34
+msgid "Import completed successfully"
+msgstr ""
+
+#: apps/competency/models.py:60 apps/competency/models.py:106
+#: apps/competency/models.py:126 apps/operation/models.py:596
+msgid "Version"
+msgstr ""
+
+#: apps/competency/models.py:61 apps/operation/models.py:63
+msgid "Ancestors"
+msgstr ""
+
+#: apps/competency/models.py:64 apps/competency/models.py:101
+#: apps/competency/models.py:145
+msgid "Classification"
+msgstr ""
+
+#: apps/competency/models.py:65
+msgid "Classifications"
+msgstr ""
+
+#: apps/competency/models.py:104 apps/course/models.py:115
+msgid "Level"
+msgstr ""
+
+#: apps/competency/models.py:105 apps/competency/models.py:125
+msgid "Number"
+msgstr ""
+
+#: apps/competency/models.py:109 apps/competency/models.py:122
+#: apps/competency/models.py:190 apps/competency/models.py:261
+msgid "Skill"
+msgstr ""
+
+#: apps/competency/models.py:110 apps/competency/models.py:174
+msgid "Skills"
+msgstr ""
+
+#: apps/competency/models.py:129
+msgid "Factor"
+msgstr ""
+
+#: apps/competency/models.py:130 apps/competency/models.py:146
+#: apps/competency/models.py:191 apps/competency/models.py:262
+msgid "Factors"
+msgstr ""
+
+#: apps/competency/models.py:151
+msgid "Competency Goal"
+msgstr ""
+
+#: apps/competency/models.py:152
+msgid "Competency Goals"
+msgstr ""
+
+#: apps/competency/models.py:170
+msgid "Image"
+msgstr ""
+
+#: apps/competency/models.py:172 apps/competency/models.py:240
+msgid "Issuer"
+msgstr ""
+
+#: apps/competency/models.py:173 apps/competency/models.py:241
+#: apps/store/models.py:78
+msgid "Validity Days"
+msgstr ""
+
+#: apps/competency/models.py:177 apps/competency/models.py:189
+#: apps/competency/models.py:205 apps/competency/models.py:218
+msgid "Badge"
+msgstr ""
+
+#: apps/competency/models.py:178
+msgid "Badges"
+msgstr ""
+
+#: apps/competency/models.py:192 apps/competency/models.py:263
+msgid "Coverage"
+msgstr ""
+
+#: apps/competency/models.py:195
+msgid "Badge Skill"
+msgstr ""
+
+#: apps/competency/models.py:196
+msgid "Badge Skills"
+msgstr ""
+
+#: apps/competency/models.py:206 apps/competency/models.py:277
+#: apps/partner/apps.py:8 apps/partner/models.py:46 apps/partner/models.py:59
+msgid "Partner"
+msgstr ""
+
+#: apps/competency/models.py:207 apps/competency/models.py:278
+msgid "Claim"
+msgstr ""
+
+#: apps/competency/models.py:208 apps/competency/models.py:279
+msgid "Endorsed"
+msgstr ""
+
+#: apps/competency/models.py:211
+msgid "BadgeEndorsement"
+msgstr ""
+
+#: apps/competency/models.py:212
+msgid "Badge Endorsements"
+msgstr ""
+
+#: apps/competency/models.py:219
+msgid "Earner"
+msgstr ""
+
+#: apps/competency/models.py:221 apps/competency/models.py:297
+msgid "Revoked"
+msgstr ""
+
+#: apps/competency/models.py:222 apps/competency/models.py:298
+msgid "Revoked Reason"
+msgstr ""
+
+#: apps/competency/models.py:228
+msgid "Badge Award"
+msgstr ""
+
+#: apps/competency/models.py:229
+msgid "Badge Awards"
+msgstr ""
+
+#: apps/competency/models.py:236
+msgid "Background Image"
+msgstr ""
+
+#: apps/competency/models.py:238
+msgid "Template"
+msgstr ""
+
+#: apps/competency/models.py:244 apps/competency/models.py:260
+#: apps/competency/models.py:276 apps/competency/models.py:291
+#: apps/course/admin.py:35
+msgid "Certificate"
+msgstr ""
+
+#: apps/competency/models.py:245 apps/course/admin.py:36
+#: apps/course/models.py:125
+msgid "Certificates"
+msgstr ""
+
+#: apps/competency/models.py:266
+msgid "Certificate Skill"
+msgstr ""
+
+#: apps/competency/models.py:267
+msgid "Certificate Skills"
+msgstr ""
+
+#: apps/competency/models.py:282
+msgid "Certificate Endorsement"
+msgstr ""
+
+#: apps/competency/models.py:283
+msgid "Certificate Endorsements"
+msgstr ""
+
+#: apps/competency/models.py:292
+msgid "Recipient"
+msgstr ""
+
+#: apps/competency/models.py:293 apps/content/models.py:63
+msgid "PDF"
+msgstr ""
+
+#: apps/competency/models.py:295 apps/operation/models.py:505
+#: apps/tracking/models.py:26
+msgid "Data"
+msgstr ""
+
+#: apps/competency/models.py:302
+msgid "Certificate Award"
+msgstr ""
+
+#: apps/competency/models.py:303
+msgid "Certificate Awards"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:8
+#: apps/competency/templates/competency/certificate_verification.html:9
+#: apps/competency/templates/competency/certificate_verification.html:181
+msgid "Certificate Verification"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:10
+msgid "Official Certificate Verification"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:182
+msgid "Official Verification Service"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:190
+msgid ""
+"This page is an official verification page accessed via QR code or secure "
+"link."
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:192
+msgid "The information below confirms the issuance status of the certificate."
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:195
+msgid "Invalid request"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:197
+msgid "Authentic Certificate Verified"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:201
+msgid "This certificate is no longer valid (expired)"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:206
+msgid "Document Number"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:210
+msgid "Course / Certificate Title"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:219
+msgid "Expiration Date"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:224
+msgid "Issuing Authority"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:229
+msgid "Verified by the official certificate database at the time shown below."
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:231
+msgid "Verification Timestamp"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:232
+msgid "System Verified"
+msgstr ""
+
+#: apps/competency/templates/competency/certificate_verification.html:235
+msgid "Certificate not found"
+msgstr ""
+
+#: apps/competency/tests/factories.py:138
+msgid "Certificate of Completion"
+msgstr ""
+
+#: apps/competency/tests/factories.py:141 apps/course/models.py:553
+#, python-format
+msgid "%(hours)s hours"
+msgstr ""
+
+#: apps/content/admin.py:22
+msgid "Public Access"
+msgstr ""
+
+#: apps/content/apps.py:8
+msgid "Content"
+msgstr ""
+
+#: apps/content/models.py:59
+msgid "Video"
+msgstr ""
+
+#: apps/content/models.py:60
+msgid "Short"
+msgstr ""
+
+#: apps/content/models.py:61
+msgid "Ebook"
+msgstr ""
+
+#: apps/content/models.py:62
+msgid "HTML"
+msgstr ""
+
+#: apps/content/models.py:69
+msgid "Uploaded"
+msgstr ""
+
+#: apps/content/models.py:73 apps/content/models.py:124
+#: apps/content/models.py:141 apps/content/models.py:154
+#: apps/content/models.py:266 apps/course/models.py:304
+msgid "Media"
+msgstr ""
+
+#: apps/content/models.py:74 apps/course/models.py:282
+msgid "Medias"
+msgstr ""
+
+#: apps/content/models.py:125 apps/learning/models.py:66
+msgid "Start"
+msgstr ""
+
+#: apps/content/models.py:126 apps/learning/models.py:67
+msgid "End"
+msgstr ""
+
+#: apps/content/models.py:127 apps/learning/models.py:68
+msgid "Archive"
+msgstr ""
+
+#: apps/content/models.py:130
+msgid "Public Access Media"
+msgstr ""
+
+#: apps/content/models.py:131
+msgid "Public Access Medias"
+msgstr ""
+
+#: apps/content/models.py:143 apps/discussion/models.py:317
+#: apps/operation/models.py:118 apps/operation/models.py:504
+#: apps/operation/models.py:594
+msgid "Body"
+msgstr ""
+
+#: apps/content/models.py:147
+msgid "Subtitle"
+msgstr ""
+
+#: apps/content/models.py:148
+msgid "Subtitles"
+msgstr ""
+
+#: apps/content/models.py:155
+msgid "Last Position"
+msgstr ""
+
+#: apps/content/models.py:156
+msgid "Watch Bits"
+msgstr ""
+
+#: apps/content/models.py:157
+msgid "Watch Rate"
+msgstr ""
+
+#: apps/content/models.py:163
+msgid "Watch"
+msgstr ""
+
+#: apps/content/models.py:164
+msgid "Watches"
+msgstr ""
+
+#: apps/content/models.py:273
+msgid "Notes"
+msgstr ""
+
+#: apps/course/admin.py:30 apps/operation/models.py:66
+msgid "Category"
+msgstr ""
+
+#: apps/course/admin.py:31 apps/course/models.py:123
+#: apps/operation/models.py:67 apps/store/models.py:58
+msgid "Categories"
+msgstr ""
+
+#: apps/course/admin.py:62
+msgid "Related Course"
+msgstr ""
+
+#: apps/course/admin.py:63 apps/course/models.py:124
+msgid "Related Courses"
+msgstr ""
+
+#: apps/course/apps.py:8 apps/course/models.py:128 apps/course/models.py:248
+#: apps/course/models.py:267 apps/course/models.py:279
+#: apps/course/models.py:322 apps/course/models.py:358
+#: apps/course/models.py:490
+msgid "Course"
+msgstr ""
+
+#: apps/course/commands/create_course_mail_template.py:13
+msgid "Convert MJML templates to HTML"
+msgstr ""
+
+#: apps/course/commands/create_course_mail_template.py:24
+msgid "No MJML files found"
+msgstr ""
+
+#: apps/course/commands/create_course_mail_template.py:45
+#, python-format
+msgid "Invalid MJML file: %(name)s"
+msgstr ""
+
+#: apps/course/commands/create_course_mail_template.py:65
+#, python-format
+msgid "Successfully converted %(name)s"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course certificate issued"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:13
+msgid "Your Certificate is Ready"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:18
+msgid ""
+"Congratulations! We're pleased to inform you that your certificate for "
+"successfully completing <strong>{ course_title }</strong> has been issued."
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:21
+msgid "Certificate Details:"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:24
+msgid "Issue Date: { issue_date }"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:25
+msgid "Certificate ID: { certificate_id }"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:28
+msgid "You can download your certificate by clicking the button below."
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:31
+msgid "View Certificate"
+msgstr ""
+
+#: apps/course/mjml/certificate_issued_email.mjml:34
+msgid ""
+"If the button above doesn't work, you can also access your certificate by "
+"copying and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course ends today"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:13
+msgid "Your Course Ends Today"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:18
+msgid ""
+"This is a friendly reminder that your course <strong>{ course_title }</"
+"strong> ends today."
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:21
+#: apps/course/mjml/grade_completed_email.mjml:21
+msgid "Important Information:"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:24
+msgid "Last day to submit any pending assignments: { deadline }"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:25
+msgid "Course access ends: { end_time }"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:28
+msgid ""
+"Please make sure to complete and submit any remaining assignments before the "
+"deadline. Your final grade will be calculated shortly after the course ends."
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:31
+#: apps/course/mjml/start_today_email.mjml:33
+msgid "Access Course"
+msgstr ""
+
+#: apps/course/mjml/end_today_email.mjml:34
+#: apps/course/mjml/start_today_email.mjml:36
+#: apps/course/mjml/weekly_progress_email.mjml:35
+msgid ""
+"If the button above doesn't work, you can also access your course by copying "
+"and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course exam today"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:13
+msgid "Your Exam is Today"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:18
+msgid ""
+"This is a reminder that you have an exam today for your course "
+"<strong>{ course_title }</strong>."
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:21
+msgid "Exam Details:"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:24
+msgid "Date: { exam_date }"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:25
+msgid "Time: { exam_time }"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:26
+msgid "Duration: { exam_duration }"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:29
+msgid ""
+"Make sure you're prepared and have a stable internet connection. Good luck "
+"on your exam!"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:32
+msgid "Access Exam"
+msgstr ""
+
+#: apps/course/mjml/exam_today_email.mjml:35
+msgid ""
+"If the button above doesn't work, you can also access your exam by copying "
+"and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course grading completed"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:13
+msgid "Grading Complete - Results Available"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:18
+msgid ""
+"Great news! The grading for <strong>{ course_title }</strong> has been "
+"completed and your results are now available."
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:24
+msgid "Grading Completed: { completion_date }"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:25
+msgid "Your Final Score: { final_score }"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:28
+msgid ""
+"Congratulations on completing the course! Your final results have been "
+"calculated and are now available for review. If you meet the completion "
+"criteria, your certificate will be generated and available for download."
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:31
+msgid "View Results"
+msgstr ""
+
+#: apps/course/mjml/grade_completed_email.mjml:34
+msgid ""
+"If the button above doesn't work, you can also view your results by copying "
+"and pasting the following link into your browser:"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course starts today"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:14
+msgid "Your Course Starts Today"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:20
+msgid ""
+"We're excited to let you know that your course <strong>{ course_title }</"
+"strong> starts today!"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:23
+msgid "Course Details:"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:26
+msgid "Start Date: { start_date }"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:27
+msgid "End Date: { end_date }"
+msgstr ""
+
+#: apps/course/mjml/start_today_email.mjml:30
+msgid ""
+"We recommend logging in today to familiarize yourself with the course "
+"materials and syllabus."
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:5
+#, python-format
+msgid "%(platform_name)s Course weekly progress"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:13
+msgid "Your Weekly Course Progress"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:18
+msgid ""
+"Here's your weekly progress update for <strong>{ course_title }</strong>."
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:21
+msgid "Course Progress Summary:"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:24
+msgid "Completed Lessons: { completed } / { total }"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:25
+#, python-format
+msgid "Current Progress: { percentage }%%"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:26
+msgid "Upcoming Deadlines: { deadline }"
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:29
+msgid ""
+"You're making great progress! Keep up the good work and stay on track with "
+"your learning goals."
+msgstr ""
+
+#: apps/course/mjml/weekly_progress_email.mjml:32
+msgid "Continue Learning"
+msgstr ""
+
+#: apps/course/models.py:88
+msgid "Templates"
+msgstr ""
+
+#: apps/course/models.py:91 apps/course/models.py:118
+msgid "Message Preset"
+msgstr ""
+
+#: apps/course/models.py:92
+msgid "Message Presets"
+msgstr ""
+
+#: apps/course/models.py:106
+msgid "Beginner"
+msgstr ""
+
+#: apps/course/models.py:107
+msgid "Intermediate"
+msgstr ""
+
+#: apps/course/models.py:108
+msgid "Advanced"
+msgstr ""
+
+#: apps/course/models.py:109
+msgid "Common"
+msgstr ""
+
+#: apps/course/models.py:112
+msgid "Objective"
+msgstr ""
+
+#: apps/course/models.py:113
+msgid "Preview URL"
+msgstr ""
+
+#: apps/course/models.py:114
+msgid "Effort Hours"
+msgstr ""
+
+#: apps/course/models.py:116 apps/operation/models.py:199
+#: apps/operation/models.py:211 apps/operation/models.py:218
+msgid "FAQ"
+msgstr ""
+
+#: apps/course/models.py:120 apps/operation/models.py:170
+msgid "Instructors"
+msgstr ""
+
+#: apps/course/models.py:121 apps/survey/models.py:75
+msgid "Surveys"
+msgstr ""
+
+#: apps/course/models.py:129
+msgid "Courses"
+msgstr ""
+
+#: apps/course/models.py:249 apps/operation/models.py:169
+msgid "Instructor"
+msgstr ""
+
+#: apps/course/models.py:250
+msgid "Lead"
+msgstr ""
+
+#: apps/course/models.py:255
+msgid "Course Instructor"
+msgstr ""
+
+#: apps/course/models.py:256
+msgid "Course Instructors"
+msgstr ""
+
+#: apps/course/models.py:263
+msgid "Pre"
+msgstr ""
+
+#: apps/course/models.py:264 apps/discussion/admin.py:106
+#: apps/discussion/models.py:320
+msgid "Post"
+msgstr ""
+
+#: apps/course/models.py:265
+msgid "Free"
+msgstr ""
+
+#: apps/course/models.py:268 apps/survey/apps.py:8 apps/survey/models.py:74
+#: apps/survey/models.py:87
+msgid "Survey"
+msgstr ""
+
+#: apps/course/models.py:269
+msgid "Timing"
+msgstr ""
+
+#: apps/course/models.py:272
+msgid "Course Survey"
+msgstr ""
+
+#: apps/course/models.py:273
+msgid "Course Surveys"
+msgstr ""
+
+#: apps/course/models.py:283 apps/course/models.py:324
+msgid "Start Offset (Days)"
+msgstr ""
+
+#: apps/course/models.py:284 apps/course/models.py:325
+msgid "End Offset (Days) from Start Offset"
+msgstr ""
+
+#: apps/course/models.py:289 apps/course/models.py:303
+msgid "Lesson"
+msgstr ""
+
+#: apps/course/models.py:290
+msgid "Lessons"
+msgstr ""
+
+#: apps/course/models.py:309
+msgid "Lesson Media"
+msgstr ""
+
+#: apps/course/models.py:310
+msgid "Lesson Medias"
+msgstr ""
+
+#: apps/course/models.py:323
+msgid "Weight"
+msgstr ""
+
+#: apps/course/models.py:329 apps/store/models.py:79
+msgid "Item Type"
+msgstr ""
+
+#: apps/course/models.py:332 apps/store/models.py:80
+msgid "Item ID"
+msgstr ""
+
+#: apps/course/models.py:336
+msgid "Assessment"
+msgstr ""
+
+#: apps/course/models.py:337
+msgid "Assessments"
+msgstr ""
+
+#: apps/course/models.py:359
+msgid "Assessment Weight"
+msgstr ""
+
+#: apps/course/models.py:360
+msgid "Completion Weight"
+msgstr ""
+
+#: apps/course/models.py:361
+msgid "Completion Passing Point"
+msgstr ""
+
+#: apps/course/models.py:364
+msgid "Grading Policy"
+msgstr ""
+
+#: apps/course/models.py:365
+msgid "Grading Policies"
+msgstr ""
+
+#: apps/course/models.py:492
+msgid "Last Lesson"
+msgstr ""
+
+#: apps/course/models.py:496 apps/course/models.py:692
+msgid "Engagement"
+msgstr ""
+
+#: apps/course/models.py:497
+msgid "Engagements"
+msgstr ""
+
+#: apps/course/models.py:550
+msgid "Course Completion Certificate"
+msgstr ""
+
+#: apps/course/models.py:693
+msgid "Details"
+msgstr ""
+
+#: apps/course/models.py:695
+msgid "Completion Rate"
+msgstr ""
+
+#: apps/course/models.py:702
+msgid "Gradebook"
+msgstr ""
+
+#: apps/course/models.py:703
+msgid "Gradebooks"
+msgstr ""
+
+#: apps/discussion/admin.py:107
+msgid "Reply"
+msgstr ""
+
+#: apps/discussion/admin.py:108 apps/discussion/admin.py:118
+msgid "Tutor Assessment"
+msgstr ""
+
+#: apps/discussion/apps.py:8 apps/discussion/models.py:133
+#: apps/discussion/models.py:201
+msgid "Discussion"
+msgstr ""
+
+#: apps/discussion/models.py:93
+msgid "Directive"
+msgstr ""
+
+#: apps/discussion/models.py:95
+msgid "Point Requirements"
+msgstr ""
+
+#: apps/discussion/models.py:134
+msgid "Discussions"
+msgstr ""
+
+#: apps/discussion/models.py:315 apps/operation/models.py:677
+msgid "Parent"
+msgstr ""
+
+#: apps/discussion/models.py:321
+msgid "Posts"
+msgstr ""
+
+#: apps/exam/apps.py:8 apps/exam/models.py:139 apps/exam/models.py:229
+msgid "Exam"
+msgstr ""
+
+#: apps/exam/models.py:71
+msgid "Question Composition"
+msgstr ""
+
+#: apps/exam/models.py:94 apps/survey/models.py:47
+msgid "Single Choice"
+msgstr ""
+
+#: apps/exam/models.py:95 apps/survey/models.py:48
+msgid "Text Input"
+msgstr ""
+
+#: apps/exam/models.py:96 apps/survey/models.py:49
+msgid "Number Input"
+msgstr ""
+
+#: apps/exam/models.py:97
+msgid "Essay"
+msgstr ""
+
+#: apps/exam/models.py:103 apps/quiz/models.py:57 apps/survey/models.py:55
+msgid "Options"
+msgstr ""
+
+#: apps/exam/models.py:121 apps/quiz/models.py:72
+msgid "Correct Answers"
+msgstr ""
+
+#: apps/exam/models.py:122
+msgid "Correct Criteria"
+msgstr ""
+
+#: apps/exam/models.py:140
+msgid "Exams"
+msgstr ""
+
+#: apps/exam/models.py:349 apps/exam/models.py:359 apps/quiz/models.py:117
+#: apps/survey/models.py:90
+msgid "Answers"
+msgstr ""
+
+#: apps/exam/models.py:352
+msgid "Temporary Answer"
+msgstr ""
+
+#: apps/exam/models.py:353
+msgid "Temporary Answers"
+msgstr ""
+
+#: apps/learning/apps.py:8
+msgid "Learning"
+msgstr ""
+
+#: apps/learning/models.py:69
+msgid "Enrolled"
+msgstr ""
+
+#: apps/learning/models.py:73 apps/learning/models.py:354
+#: apps/operation/models.py:366
+msgid "Content Type"
+msgstr ""
+
+#: apps/learning/models.py:76 apps/learning/models.py:357
+#: apps/operation/models.py:367
+msgid "Content ID"
+msgstr ""
+
+#: apps/learning/models.py:78
+msgid "Enrolled By"
+msgstr ""
+
+#: apps/learning/models.py:81
+msgid "Enrollment"
+msgstr ""
+
+#: apps/learning/models.py:82
+msgid "Enrollments"
+msgstr ""
+
+#: apps/learning/models.py:111
+msgid "Content does not exist"
+msgstr ""
+
+#: apps/learning/models.py:237 apps/operation/models.py:119
+msgid "Public"
+msgstr ""
+
+#: apps/learning/models.py:238
+msgid "Available From"
+msgstr ""
+
+#: apps/learning/models.py:239
+msgid "Available Until"
+msgstr ""
+
+#: apps/learning/models.py:242 apps/learning/models.py:350
+#: apps/learning/models.py:378
+msgid "Catalog"
+msgstr ""
+
+#: apps/learning/models.py:243
+msgid "Catalogs"
+msgstr ""
+
+#: apps/learning/models.py:363
+msgid "Catalog Item"
+msgstr ""
+
+#: apps/learning/models.py:364
+msgid "Catalog Items"
+msgstr ""
+
+#: apps/learning/models.py:379
+msgid "Granted By"
+msgstr ""
+
+#: apps/learning/models.py:383
+msgid "User Catalog"
+msgstr ""
+
+#: apps/learning/models.py:384
+msgid "User Catalogs"
+msgstr ""
+
+#: apps/operation/admin.py:107 apps/operation/models.py:431
+msgid "Solved"
+msgstr ""
+
+#: apps/operation/apps.py:8
+msgid "Operation"
+msgstr ""
+
+#: apps/operation/management/commands/create_empty_policies.py:13
+msgid "Create empty policies"
+msgstr ""
+
+#: apps/operation/management/commands/create_empty_policies.py:31
+#, python-format
+msgid "Write your %s policy here"
+msgstr ""
+
+#: apps/operation/management/commands/create_empty_policies.py:36
+#, python-format
+msgid "Successfully created policy %s"
+msgstr ""
+
+#: apps/operation/management/commands/create_empty_policies.py:38
+#, python-format
+msgid "Policy %s already exists"
+msgstr ""
+
+#: apps/operation/models.py:84 apps/operation/models.py:91
+msgid "Tag"
+msgstr ""
+
+#: apps/operation/models.py:85
+msgid "Tags"
+msgstr ""
+
+#: apps/operation/models.py:90
+msgid "Object ID"
+msgstr ""
+
+#: apps/operation/models.py:94
+msgid "Tagged Item"
+msgstr ""
+
+#: apps/operation/models.py:95
+msgid "Tagged Items"
+msgstr ""
+
+#: apps/operation/models.py:120 apps/operation/models.py:679
+msgid "Pinned"
+msgstr ""
+
+#: apps/operation/models.py:121
+msgid "Reads"
+msgstr ""
+
+#: apps/operation/models.py:124 apps/operation/models.py:150
+msgid "Announcement"
+msgstr ""
+
+#: apps/operation/models.py:125
+msgid "Announcements"
+msgstr ""
+
+#: apps/operation/models.py:151
+msgid "Read at"
+msgstr ""
+
+#: apps/operation/models.py:154
+msgid "Announcement Read"
+msgstr ""
+
+#: apps/operation/models.py:155
+msgid "Announcement Reads"
+msgstr ""
+
+#: apps/operation/models.py:163
+msgid "About"
+msgstr ""
+
+#: apps/operation/models.py:164
+msgid "Bio"
+msgstr ""
+
+#: apps/operation/models.py:187
+msgid "Honor Codes"
+msgstr ""
+
+#: apps/operation/models.py:200 apps/operation/models.py:219
+msgid "FAQs"
+msgstr ""
+
+#: apps/operation/models.py:225
+msgid "File"
+msgstr ""
+
+#: apps/operation/models.py:226
+msgid "Size"
+msgstr ""
+
+#: apps/operation/models.py:227
+msgid "Mime Type"
+msgstr ""
+
+#: apps/operation/models.py:233
+msgid "Attachment"
+msgstr ""
+
+#: apps/operation/models.py:365 apps/operation/models.py:430
+#: apps/operation/models.py:682
+msgid "Writer"
+msgstr ""
+
+#: apps/operation/models.py:371 apps/operation/models.py:428
+msgid "Inquiry"
+msgstr ""
+
+#: apps/operation/models.py:372
+msgid "Inquiries"
+msgstr ""
+
+#: apps/operation/models.py:434
+msgid "Inquiry Response"
+msgstr ""
+
+#: apps/operation/models.py:435
+msgid "Inquiry Responses"
+msgstr ""
+
+#: apps/operation/models.py:447
+msgid "Review"
+msgstr ""
+
+#: apps/operation/models.py:448 apps/operation/models.py:660
+msgid "Closed"
+msgstr ""
+
+#: apps/operation/models.py:451
+msgid "Question Type"
+msgstr ""
+
+#: apps/operation/models.py:452
+msgid "Question ID"
+msgstr ""
+
+#: apps/operation/models.py:456
+msgid "Grade Appeal"
+msgstr ""
+
+#: apps/operation/models.py:457
+msgid "Grade Appeals"
+msgstr ""
+
+#: apps/operation/models.py:498
+msgid "Text"
+msgstr ""
+
+#: apps/operation/models.py:499
+msgid "FCM"
+msgstr ""
+
+#: apps/operation/models.py:501
+msgid "Channel"
+msgstr ""
+
+#: apps/operation/models.py:502
+msgid "Group"
+msgstr ""
+
+#: apps/operation/models.py:506
+msgid "Recipient Addresses"
+msgstr ""
+
+#: apps/operation/models.py:508
+msgid "Reserved"
+msgstr ""
+
+#: apps/operation/models.py:509
+msgid "Sent"
+msgstr ""
+
+#: apps/operation/models.py:510
+msgid "Read"
+msgstr ""
+
+#: apps/operation/models.py:511
+msgid "Error"
+msgstr ""
+
+#: apps/operation/models.py:515
+msgid "Messages"
+msgstr ""
+
+#: apps/operation/models.py:524
+msgid "Cookie Policy"
+msgstr ""
+
+#: apps/operation/models.py:525
+msgid "Marketing Policy"
+msgstr ""
+
+#: apps/operation/models.py:526
+msgid "Data Retention Policy"
+msgstr ""
+
+#: apps/operation/models.py:532 apps/survey/models.py:56
+msgid "Mandatory"
+msgstr ""
+
+#: apps/operation/models.py:533
+msgid "Show on Join"
+msgstr ""
+
+#: apps/operation/models.py:534
+msgid "Priority"
+msgstr ""
+
+#: apps/operation/models.py:537 apps/operation/models.py:593
+msgid "Policy"
+msgstr ""
+
+#: apps/operation/models.py:538
+msgid "Policies"
+msgstr ""
+
+#: apps/operation/models.py:595
+msgid "Data Category"
+msgstr ""
+
+#: apps/operation/models.py:597
+msgid "Effective Date"
+msgstr ""
+
+#: apps/operation/models.py:600 apps/operation/models.py:631
+msgid "Policy Version"
+msgstr ""
+
+#: apps/operation/models.py:601
+msgid "Policy Versions"
+msgstr ""
+
+#: apps/operation/models.py:632
+msgid "Accepted"
+msgstr ""
+
+#: apps/operation/models.py:636
+msgid "Policy Agreement"
+msgstr ""
+
+#: apps/operation/models.py:637
+msgid "Policy Agreements"
+msgstr ""
+
+#: apps/operation/models.py:653
+msgid "Subject Type"
+msgstr ""
+
+#: apps/operation/models.py:654
+msgid "Subject ID"
+msgstr ""
+
+#: apps/operation/models.py:656
+msgid "Comment Count"
+msgstr ""
+
+#: apps/operation/models.py:657
+msgid "Rating Count"
+msgstr ""
+
+#: apps/operation/models.py:658
+msgid "Rating Sum"
+msgstr ""
+
+#: apps/operation/models.py:659
+msgid "Rating Average"
+msgstr ""
+
+#: apps/operation/models.py:663 apps/operation/models.py:676
+msgid "Thread"
+msgstr ""
+
+#: apps/operation/models.py:664
+msgid "Threads"
+msgstr ""
+
+#: apps/operation/models.py:678 apps/operation/models.py:685
+msgid "Comment"
+msgstr ""
+
+#: apps/operation/models.py:686
+msgid "Comments"
+msgstr ""
+
+#: apps/operation/tests/factories.py:292
+msgid "Generic programmes and qualifications"
+msgstr ""
+
+#: apps/operation/tests/factories.py:295 apps/operation/tests/factories.py:296
+msgid "Basic programmes and qualifications"
+msgstr ""
+
+#: apps/operation/tests/factories.py:298
+msgid "Literacy and numeracy"
+msgstr ""
+
+#: apps/operation/tests/factories.py:300 apps/operation/tests/factories.py:301
+msgid "Personal skills and development"
+msgstr ""
+
+#: apps/operation/tests/factories.py:306
+msgid "Education"
+msgstr ""
+
+#: apps/operation/tests/factories.py:309
+msgid "Education & Studies"
+msgstr ""
+
+#: apps/operation/tests/factories.py:311
+msgid "Education science"
+msgstr ""
+
+#: apps/operation/tests/factories.py:312
+msgid "Training for pre-school teachers"
+msgstr ""
+
+#: apps/operation/tests/factories.py:313
+msgid "Teacher training without subject specialization"
+msgstr ""
+
+#: apps/operation/tests/factories.py:314
+msgid "Teacher training with subject specialization"
+msgstr ""
+
+#: apps/operation/tests/factories.py:320
+msgid "Arts and humanities"
+msgstr ""
+
+#: apps/operation/tests/factories.py:323
+msgid "Arts"
+msgstr ""
+
+#: apps/operation/tests/factories.py:325
+msgid "Audio-visual techniques and media production"
+msgstr ""
+
+#: apps/operation/tests/factories.py:326
+msgid "Fashion, interior and industrial design"
+msgstr ""
+
+#: apps/operation/tests/factories.py:327
+msgid "Fine arts"
+msgstr ""
+
+#: apps/operation/tests/factories.py:328
+msgid "Handicrafts"
+msgstr ""
+
+#: apps/operation/tests/factories.py:329
+msgid "Music and performing arts"
+msgstr ""
+
+#: apps/operation/tests/factories.py:333
+msgid "Humanities (except languages)"
+msgstr ""
+
+#: apps/operation/tests/factories.py:335
+msgid "Religion and theology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:336
+msgid "History and archaeology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:337
+msgid "Philosophy and ethics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:341
+msgid "Languages"
+msgstr ""
+
+#: apps/operation/tests/factories.py:342
+msgid "Language acquisition"
+msgstr ""
+
+#: apps/operation/tests/factories.py:342
+msgid "Literature and linguistics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:347
+msgid "Social sciences, journalism and information"
+msgstr ""
+
+#: apps/operation/tests/factories.py:350
+msgid "Social and behavioural sciences"
+msgstr ""
+
+#: apps/operation/tests/factories.py:352
+msgid "Economics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:353
+msgid "Political sciences and civics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:354
+msgid "Psychology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:355
+msgid "Sociology and cultural studies"
+msgstr ""
+
+#: apps/operation/tests/factories.py:359
+msgid "Journalism and information"
+msgstr ""
+
+#: apps/operation/tests/factories.py:361
+msgid "Journalism and reporting"
+msgstr ""
+
+#: apps/operation/tests/factories.py:362
+msgid "Library, information and archival studies"
+msgstr ""
+
+#: apps/operation/tests/factories.py:368
+msgid "Business, administration and law"
+msgstr ""
+
+#: apps/operation/tests/factories.py:371
+msgid "Business and administration"
+msgstr ""
+
+#: apps/operation/tests/factories.py:373
+msgid "Accounting and taxation"
+msgstr ""
+
+#: apps/operation/tests/factories.py:374
+msgid "Finance, banking and insurance"
+msgstr ""
+
+#: apps/operation/tests/factories.py:375
+msgid "Management and administration"
+msgstr ""
+
+#: apps/operation/tests/factories.py:376
+msgid "Marketing and advertising"
+msgstr ""
+
+#: apps/operation/tests/factories.py:377
+msgid "Secretarial and office work"
+msgstr ""
+
+#: apps/operation/tests/factories.py:378
+msgid "Wholesale and retail sales"
+msgstr ""
+
+#: apps/operation/tests/factories.py:379
+msgid "Work skills"
+msgstr ""
+
+#: apps/operation/tests/factories.py:382
+msgid "Law"
+msgstr ""
+
+#: apps/operation/tests/factories.py:386
+msgid "Natural sciences, mathematics and statistics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:389
+msgid "Biological and related sciences"
+msgstr ""
+
+#: apps/operation/tests/factories.py:390
+msgid "Biology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:390
+msgid "Biochemistry"
+msgstr ""
+
+#: apps/operation/tests/factories.py:393
+msgid "Environment"
+msgstr ""
+
+#: apps/operation/tests/factories.py:394
+msgid "Environmental sciences"
+msgstr ""
+
+#: apps/operation/tests/factories.py:394
+msgid "Natural environments and wildlife"
+msgstr ""
+
+#: apps/operation/tests/factories.py:397
+msgid "Physical sciences"
+msgstr ""
+
+#: apps/operation/tests/factories.py:398
+msgid "Chemistry"
+msgstr ""
+
+#: apps/operation/tests/factories.py:398
+msgid "Earth sciences"
+msgstr ""
+
+#: apps/operation/tests/factories.py:398
+msgid "Physics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:401
+msgid "Mathematics and statistics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:402
+msgid "Mathematics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:402
+msgid "Statistics"
+msgstr ""
+
+#: apps/operation/tests/factories.py:407
+msgid "Information"
+msgstr ""
+
+#: apps/operation/tests/factories.py:410
+msgid "Information and Communication Technologies"
+msgstr ""
+
+#: apps/operation/tests/factories.py:412
+msgid "Computer use"
+msgstr ""
+
+#: apps/operation/tests/factories.py:413
+msgid "Database and network design and administration"
+msgstr ""
+
+#: apps/operation/tests/factories.py:414
+msgid "Software and applications development and analysis"
+msgstr ""
+
+#: apps/operation/tests/factories.py:420
+msgid "Engineering, manufacturing and construction"
+msgstr ""
+
+#: apps/operation/tests/factories.py:423
+msgid "Engineering and engineering trades"
+msgstr ""
+
+#: apps/operation/tests/factories.py:425
+msgid "Chemical engineering and processes"
+msgstr ""
+
+#: apps/operation/tests/factories.py:426
+msgid "Environmental protection technology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:427
+msgid "Electricity and energy"
+msgstr ""
+
+#: apps/operation/tests/factories.py:428
+msgid "Electronics and automation"
+msgstr ""
+
+#: apps/operation/tests/factories.py:429
+msgid "Mechanics and metal trades"
+msgstr ""
+
+#: apps/operation/tests/factories.py:430
+msgid "Motor vehicles, ships and aircraft"
+msgstr ""
+
+#: apps/operation/tests/factories.py:434
+msgid "Manufacturing and processing"
+msgstr ""
+
+#: apps/operation/tests/factories.py:436
+msgid "Food processing"
+msgstr ""
+
+#: apps/operation/tests/factories.py:437
+msgid "Materials (glass, paper, plastic and wood)"
+msgstr ""
+
+#: apps/operation/tests/factories.py:438
+msgid "Textiles (clothes, footwear and leather)"
+msgstr ""
+
+#: apps/operation/tests/factories.py:439
+msgid "Mining and extraction"
+msgstr ""
+
+#: apps/operation/tests/factories.py:443
+msgid "Architecture and construction"
+msgstr ""
+
+#: apps/operation/tests/factories.py:445
+msgid "Architecture and town planning"
+msgstr ""
+
+#: apps/operation/tests/factories.py:446
+msgid "Building and civil engineering"
+msgstr ""
+
+#: apps/operation/tests/factories.py:452
+msgid "Agriculture, forestry, fisheries and veterinary"
+msgstr ""
+
+#: apps/operation/tests/factories.py:455
+msgid "Agriculture"
+msgstr ""
+
+#: apps/operation/tests/factories.py:456
+msgid "Crop and livestock production"
+msgstr ""
+
+#: apps/operation/tests/factories.py:456
+msgid "Horticulture"
+msgstr ""
+
+#: apps/operation/tests/factories.py:458
+msgid "Forestry"
+msgstr ""
+
+#: apps/operation/tests/factories.py:459
+msgid "Fisheries"
+msgstr ""
+
+#: apps/operation/tests/factories.py:460
+msgid "Veterinary"
+msgstr ""
+
+#: apps/operation/tests/factories.py:464
+msgid "Health and welfare"
+msgstr ""
+
+#: apps/operation/tests/factories.py:467
+msgid "Health"
+msgstr ""
+
+#: apps/operation/tests/factories.py:469
+msgid "Dental studies"
+msgstr ""
+
+#: apps/operation/tests/factories.py:470
+msgid "Medicine"
+msgstr ""
+
+#: apps/operation/tests/factories.py:471
+msgid "Nursing and midwifery"
+msgstr ""
+
+#: apps/operation/tests/factories.py:472
+msgid "Medical diagnostic and treatment technology"
+msgstr ""
+
+#: apps/operation/tests/factories.py:473
+msgid "Therapy and rehabilitation"
+msgstr ""
+
+#: apps/operation/tests/factories.py:474
+msgid "Pharmacy"
+msgstr ""
+
+#: apps/operation/tests/factories.py:475
+msgid "Traditional and complementary medicine and therapy"
+msgstr ""
+
+#: apps/operation/tests/factories.py:479
+msgid "Welfare"
+msgstr ""
+
+#: apps/operation/tests/factories.py:481
+msgid "Care of the elderly and of disabled adults"
+msgstr ""
+
+#: apps/operation/tests/factories.py:482
+msgid "Child care and youth services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:483
+msgid "Social work and counselling"
+msgstr ""
+
+#: apps/operation/tests/factories.py:489
+msgid "Services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:492
+msgid "Personal services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:494
+msgid "Domestic services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:495
+msgid "Hair and beauty services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:496
+msgid "Hotel, restaurants and catering"
+msgstr ""
+
+#: apps/operation/tests/factories.py:497
+msgid "Sports"
+msgstr ""
+
+#: apps/operation/tests/factories.py:498
+msgid "Travel, tourism and leisure"
+msgstr ""
+
+#: apps/operation/tests/factories.py:502
+msgid "Hygiene and occupational health services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:503
+msgid "Community sanitation"
+msgstr ""
+
+#: apps/operation/tests/factories.py:503
+msgid "Occupational health and safety"
+msgstr ""
+
+#: apps/operation/tests/factories.py:506
+msgid "Security services"
+msgstr ""
+
+#: apps/operation/tests/factories.py:507
+msgid "Military and defence"
+msgstr ""
+
+#: apps/operation/tests/factories.py:507
+msgid "Protection of persons and property"
+msgstr ""
+
+#: apps/operation/tests/factories.py:509
+msgid "Transport services"
+msgstr ""
+
+#: apps/partner/management/commands/create_platform_partner.py:15
+msgid "Create platform partner"
+msgstr ""
+
+#: apps/partner/management/commands/create_platform_partner.py:25
+#, python-format
+msgid "%s is a platform for education."
+msgstr ""
+
+#: apps/partner/models.py:41
+msgid "Address"
+msgstr ""
+
+#: apps/partner/models.py:42
+msgid "Logo"
+msgstr ""
+
+#: apps/partner/models.py:43
+msgid "Website"
+msgstr ""
+
+#: apps/partner/models.py:47
+msgid "Partners"
+msgstr ""
+
+#: apps/partner/models.py:62
+msgid "Business Number"
+msgstr ""
+
+#: apps/partner/models.py:65 apps/partner/models.py:78
+msgid "Business Site"
+msgstr ""
+
+#: apps/partner/models.py:66
+msgid "Business Sites"
+msgstr ""
+
+#: apps/partner/models.py:82
+msgid "ID Number"
+msgstr ""
+
+#: apps/partner/models.py:84
+msgid "Team"
+msgstr ""
+
+#: apps/partner/models.py:85
+msgid "Job Position"
+msgstr ""
+
+#: apps/partner/models.py:86
+msgid "Job Title"
+msgstr ""
+
+#: apps/partner/models.py:87
+msgid "Employment Status"
+msgstr ""
+
+#: apps/partner/models.py:88
+msgid "Employment Type"
+msgstr ""
+
+#: apps/partner/models.py:92 apps/partner/models.py:145
+msgid "Employee"
+msgstr ""
+
+#: apps/partner/models.py:93 apps/partner/models.py:131
+msgid "Employees"
+msgstr ""
+
+#: apps/partner/models.py:132
+msgid "Staffs"
+msgstr ""
+
+#: apps/partner/models.py:135 apps/partner/models.py:144
+#: apps/partner/models.py:160
+msgid "Cohort"
+msgstr ""
+
+#: apps/partner/models.py:136
+msgid "Cohorts"
+msgstr ""
+
+#: apps/partner/models.py:148
+msgid "Cohort Employee"
+msgstr ""
+
+#: apps/partner/models.py:149
+msgid "Cohort Employees"
+msgstr ""
+
+#: apps/partner/models.py:156
+msgid "Education Manager"
+msgstr ""
+
+#: apps/partner/models.py:157
+msgid "Marketing Manager"
+msgstr ""
+
+#: apps/partner/models.py:158
+msgid "Financial Manager"
+msgstr ""
+
+#: apps/partner/models.py:162
+msgid "Role"
+msgstr ""
+
+#: apps/partner/models.py:165
+msgid "Cohort Staff"
+msgstr ""
+
+#: apps/partner/models.py:166
+msgid "Cohort Staffs"
+msgstr ""
+
+#: apps/quiz/apps.py:8 apps/quiz/models.py:86 apps/quiz/models.py:93
+msgid "Quiz"
+msgstr ""
+
+#: apps/quiz/models.py:36
+msgid "Select Count"
+msgstr ""
+
+#: apps/quiz/models.py:87
+msgid "Quizzes"
+msgstr ""
+
+#: apps/store/apps.py:8
+msgid "Store"
+msgstr ""
+
+#: apps/store/models.py:50
+msgid "Draft"
+msgstr ""
+
+#: apps/store/models.py:51
+msgid "Published"
+msgstr ""
+
+#: apps/store/models.py:52
+msgid "Archived"
+msgstr ""
+
+#: apps/store/models.py:59 apps/store/models.py:316
+msgid "Price"
+msgstr ""
+
+#: apps/store/models.py:60
+msgid "Display Price"
+msgstr ""
+
+#: apps/store/models.py:63 apps/store/models.py:77 apps/store/models.py:168
+#: apps/store/models.py:312
+msgid "Product"
+msgstr ""
+
+#: apps/store/models.py:64 apps/store/models.py:150
+msgid "Products"
+msgstr ""
+
+#: apps/store/models.py:86
+msgid "Product Item"
+msgstr ""
+
+#: apps/store/models.py:87
+msgid "Product Items"
+msgstr ""
+
+#: apps/store/models.py:97
+msgid "Percentage"
+msgstr ""
+
+#: apps/store/models.py:98
+msgid "Fixed"
+msgstr ""
+
+#: apps/store/models.py:104
+msgid "Discount Value"
+msgstr ""
+
+#: apps/store/models.py:105
+msgid "Minimum Order Price"
+msgstr ""
+
+#: apps/store/models.py:106
+msgid "Usage Limit"
+msgstr ""
+
+#: apps/store/models.py:108
+msgid "Valid From"
+msgstr ""
+
+#: apps/store/models.py:109
+msgid "Valid Until"
+msgstr ""
+
+#: apps/store/models.py:110
+msgid "Applicable Products"
+msgstr ""
+
+#: apps/store/models.py:111
+msgid "Excluded Products"
+msgstr ""
+
+#: apps/store/models.py:114 apps/store/models.py:330
+msgid "Coupon"
+msgstr ""
+
+#: apps/store/models.py:115
+msgid "Coupons"
+msgstr ""
+
+#: apps/store/models.py:140
+msgid "Percentage must be between 1 and 100"
+msgstr ""
+
+#: apps/store/models.py:143
+msgid "Fixed discount must be positive"
+msgstr ""
+
+#: apps/store/models.py:153 apps/store/models.py:167
+msgid "Cart"
+msgstr ""
+
+#: apps/store/models.py:154
+msgid "Carts"
+msgstr ""
+
+#: apps/store/models.py:171
+msgid "Cart Product"
+msgstr ""
+
+#: apps/store/models.py:172
+msgid "Cart Products"
+msgstr ""
+
+#: apps/store/models.py:179 apps/store/models.py:355 apps/store/models.py:377
+msgid "Pending"
+msgstr ""
+
+#: apps/store/models.py:180
+msgid "Paid"
+msgstr ""
+
+#: apps/store/models.py:181 apps/store/models.py:359
+msgid "Canceled"
+msgstr ""
+
+#: apps/store/models.py:182 apps/store/models.py:358 apps/store/models.py:379
+msgid "Failed"
+msgstr ""
+
+#: apps/store/models.py:183
+msgid "Refunded"
+msgstr ""
+
+#: apps/store/models.py:186
+msgid "Customer"
+msgstr ""
+
+#: apps/store/models.py:187
+msgid "Order Number"
+msgstr ""
+
+#: apps/store/models.py:188
+msgid "Subtotal"
+msgstr ""
+
+#: apps/store/models.py:189
+msgid "Total Discount"
+msgstr ""
+
+#: apps/store/models.py:190
+msgid "Total Amount"
+msgstr ""
+
+#: apps/store/models.py:191
+msgid "Customer Name"
+msgstr ""
+
+#: apps/store/models.py:192
+msgid "Customer Email"
+msgstr ""
+
+#: apps/store/models.py:193
+msgid "Customer Phone"
+msgstr ""
+
+#: apps/store/models.py:196 apps/store/models.py:311 apps/store/models.py:329
+#: apps/store/models.py:362
+msgid "Order"
+msgstr ""
+
+#: apps/store/models.py:197
+msgid "Orders"
+msgstr ""
+
+#: apps/store/models.py:206
+msgid "Cart is not active"
+msgstr ""
+
+#: apps/store/models.py:275
+#, python-format
+msgid ""
+"%(coupon_code)s does not meet the minimum order price %(min_order_price)s."
+msgstr ""
+
+#: apps/store/models.py:281
+#, python-format
+msgid "%(coupon_code)s has reached its usage limit %(usage_limit)s."
+msgstr ""
+
+#: apps/store/models.py:315
+msgid "Product Name"
+msgstr ""
+
+#: apps/store/models.py:317
+msgid "Discount Amount"
+msgstr ""
+
+#: apps/store/models.py:320
+msgid "Order Product"
+msgstr ""
+
+#: apps/store/models.py:321
+msgid "Order Products"
+msgstr ""
+
+#: apps/store/models.py:335
+msgid "Order Coupon"
+msgstr ""
+
+#: apps/store/models.py:336
+msgid "Order Coupons"
+msgstr ""
+
+#: apps/store/models.py:343
+msgid "Store ID"
+msgstr ""
+
+#: apps/store/models.py:347
+msgid "Payment Gateway"
+msgstr ""
+
+#: apps/store/models.py:348
+msgid "Payment Gateways"
+msgstr ""
+
+#: apps/store/models.py:354
+msgid "Ready"
+msgstr ""
+
+#: apps/store/models.py:356
+msgid "Partial"
+msgstr ""
+
+#: apps/store/models.py:363
+msgid "Transaction ID"
+msgstr ""
+
+#: apps/store/models.py:364 apps/store/models.py:384
+msgid "Amount"
+msgstr ""
+
+#: apps/store/models.py:365
+msgid "Gateway"
+msgstr ""
+
+#: apps/store/models.py:366
+msgid "Payment Data"
+msgstr ""
+
+#: apps/store/models.py:369 apps/store/models.py:382
+msgid "Payment"
+msgstr ""
+
+#: apps/store/models.py:370
+msgid "Payments"
+msgstr ""
+
+#: apps/store/models.py:383
+msgid "Refund ID"
+msgstr ""
+
+#: apps/store/models.py:386
+msgid "Refund Data"
+msgstr ""
+
+#: apps/store/models.py:387
+msgid "Processed By"
+msgstr ""
+
+#: apps/store/models.py:390
+msgid "Refund"
+msgstr ""
+
+#: apps/store/models.py:391
+msgid "Refunds"
+msgstr ""
+
+#: apps/survey/models.py:36 apps/survey/models.py:51 apps/survey/models.py:68
+msgid "Question Paper"
+msgstr ""
+
+#: apps/survey/models.py:37
+msgid "Question Papers"
+msgstr ""
+
+#: apps/survey/models.py:69
+msgid "Complete Message"
+msgstr ""
+
+#: apps/survey/models.py:70
+msgid "Anonymous"
+msgstr ""
+
+#: apps/survey/models.py:71
+msgid "Likert Options"
+msgstr ""
+
+#: apps/survey/models.py:88
+msgid "Respondent"
+msgstr ""
+
+#: apps/survey/models.py:89
+msgid "Hashed Email"
+msgstr ""
+
+#: apps/survey/tests/factories.py:82
+msgid "Strongly Disagree"
+msgstr ""
+
+#: apps/survey/tests/factories.py:82
+msgid "Disagree"
+msgstr ""
+
+#: apps/survey/tests/factories.py:82
+msgid "Neutral"
+msgstr ""
+
+#: apps/survey/tests/factories.py:82
+msgid "Agree"
+msgstr ""
+
+#: apps/survey/tests/factories.py:82
+msgid "Strongly Agree"
+msgstr ""
+
+#: apps/tracking/admin.py:17 apps/tracking/models.py:27
+msgid "Diff"
+msgstr ""
+
+#: apps/tracking/admin.py:23
+msgid "Admin"
+msgstr ""
+
+#: apps/tracking/admin.py:31
+msgid "Model"
+msgstr ""
+
+#: apps/tracking/apps.py:8
+msgid "Tracking"
+msgstr ""
+
+#: apps/tracking/models.py:11
+msgid "Sync Date"
+msgstr ""
+
+#: apps/tracking/models.py:12
+msgid "Sync Count"
+msgstr ""
+
+#: apps/tracking/models.py:13
+msgid "Duration (seconds)"
+msgstr ""
+
+#: apps/tracking/models.py:16
+msgid "Sync Record"
+msgstr ""
+
+#: apps/tracking/models.py:17
+msgid "Sync Records"
+msgstr ""
+
+#: apps/tracking/models.py:21
+msgid "Slug"
+msgstr ""
+
+#: apps/tracking/models.py:22
+msgid "Event Model"
+msgstr ""
+
+#: apps/tracking/models.py:23
+msgid "Event ID"
+msgstr ""
+
+#: apps/tracking/models.py:24
+msgid "Created At"
+msgstr ""
+
+#: apps/tracking/models.py:25
+msgid "Label"
+msgstr ""
+
+#: apps/tracking/models.py:28
+msgid "Context ID"
+msgstr ""
+
+#: apps/tracking/models.py:29
+msgid "Context"
+msgstr ""
+
+#: apps/tracking/models.py:30
+msgid "Data Model"
+msgstr ""
+
+#: apps/tracking/models.py:31
+msgid "Data ID"
+msgstr ""
+
+#: apps/tracking/models.py:34
+msgid "Hot Event"
+msgstr ""
+
+#: apps/tracking/models.py:35
+msgid "Hot Events"
+msgstr ""
+
+#: minima/settings.py:217
+msgid "Storage"
+msgstr ""

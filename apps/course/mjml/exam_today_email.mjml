@@ -1,0 +1,45 @@
+{% spaceless %}
+{% load i18n static %}
+<mjml>
+  <mj-head>
+    <mj-title>{% blocktranslate with platform_name=platform_name %}{{ platform_name }} Course exam today{% endblocktranslate %}</mj-title>
+    <mj-include path="./partial/attributes.mjml" />
+    <mj-include path="./partial/style.mjml" />
+  </mj-head>
+  <mj-body background-color="#f3f4f6">
+    <mj-include path="./partial/header.mjml" />
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" padding-bottom="20px">{% translate "Your Exam is Today" %}</mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate %}Hello { name },{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="15px">
+          {% blocktranslate with course_title=course_title %}This is a reminder that you have an exam today for your course <strong>{ course_title }</strong>.{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="10px">
+          {% translate "Exam Details:" %}
+        </mj-text>
+        <mj-text padding-left="15px" padding-bottom="15px">
+          • {% blocktranslate with exam_date=exam_date %}Date: { exam_date }{% endblocktranslate %}<br>
+          • {% blocktranslate with exam_time=exam_time %}Time: { exam_time }{% endblocktranslate %}<br>
+          • {% blocktranslate with exam_duration=exam_duration %}Duration: { exam_duration }{% endblocktranslate %}
+        </mj-text>
+        <mj-text padding-bottom="20px">
+          {% translate "Make sure you're prepared and have a stable internet connection. Good luck on your exam!" %}
+        </mj-text>
+        <mj-button href="{ exam_url }" width="200px" padding="20px 0" background-color="#4F46E5" role="button">
+          {% translate "Access Exam" %}
+        </mj-button>
+        <mj-text padding-top="20px" padding-bottom="10px">
+          {% translate "If the button above doesn't work, you can also access your exam by copying and pasting the following link into your browser:" %}
+        </mj-text>
+        <mj-text font-size="14px" color="#4F46E5" word-break="break-all">
+          { exam_url }
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-include path="./partial/footer.mjml" />
+  </mj-body>
+</mjml>
+{% endspaceless %}

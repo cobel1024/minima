@@ -1,0 +1,17 @@
+FROM opensearchproject/opensearch:3.2.0
+
+RUN /usr/share/opensearch/bin/opensearch-plugin install analysis-nori
+
+RUN /usr/share/opensearch/bin/opensearch-plugin remove opensearch-skills && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-ml && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-neural-search && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-security-analytics && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-alerting && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-anomaly-detection && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-observability && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-performance-analyzer && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-flow-framework && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-ltr && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-notifications && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-notifications-core && \
+  /usr/share/opensearch/bin/opensearch-plugin remove opensearch-reports-scheduler
